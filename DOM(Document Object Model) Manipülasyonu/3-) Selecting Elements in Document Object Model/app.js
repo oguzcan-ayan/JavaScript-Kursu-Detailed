@@ -4,7 +4,7 @@ let element;
 
 element = document.getElementById("a-1");   //Html Collection
 element = document.getElementById("a-3");
-
+console.log(element);
 //  Selecting Elements according to the Class
 
 element = document.getElementsByClassName("dark");  //Html Collection
@@ -33,11 +33,11 @@ element = document.querySelector("a");
 
 //  querySelectorAll - It selects all elements if there is more than one value
 
-element = document.querySelectorAll("a");   //Node List
+/* element = document.querySelectorAll("a");   //Node List
 
 element.forEach(function(el){
     console.log(el);
-});
+}); */
 /* console.log(element); */
 
 

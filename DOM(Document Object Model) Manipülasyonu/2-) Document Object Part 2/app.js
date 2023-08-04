@@ -5,16 +5,18 @@ value = document;
 //  Scripts
 
 value = document.scripts;
-
 value = document.scripts.length;
 value = document.scripts[0];
+console.log(value);
 
 //  Links
 value = document.links;
+console.log(value);
 value = document.links[0];
 value = document.links[document.links.length - 1];
 value = document.links[document.links.length - 1].getAttribute("class");
 value = document.links[document.links.length - 1].getAttribute("href");
+console.log(value);
 value = document.links[document.links.length - 1].className;
 value = document.links[document.links.length - 1].classList;
 
