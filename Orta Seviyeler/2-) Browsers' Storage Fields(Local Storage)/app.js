@@ -52,32 +52,24 @@ const form = document.getElementById("todo-form");
 const todoInput = document.getElementById("todo");
 
 form.addEventListener("submit", addToDo);
-    function addToDo(e){
 
-       let value = todoInput.value;
+function addToDo(e) {
 
-       let todos;
+  let value = todoInput.value;
 
-      if(localStorage.getItem("todos") === null){
-            todos = [];
-      }
-      else{
-        todos = JSON.parse(localStorage.getItem("todos"));
-      }
-        todos.push(value);
+  let todos;
 
-      localStorage.setItem("todos", JSON.stringify(todos));
+  if (localStorage.getItem("todos") === null) {
+    todos = [];
+  } else {
+    todos = JSON.parse(localStorage.getItem("todos"));
+  }
+  todos.push(value);
 
-      e.preventDefault();
-    }
+  localStorage.setItem("todos", JSON.stringify(todos));
 
+  console.log(todos);
+  console.log(("todos", JSON.stringify(todos)));
 
-
-
-
-
-
-
-
-
-
+  e.preventDefault();
+}

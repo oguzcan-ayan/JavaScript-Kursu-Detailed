@@ -14,14 +14,14 @@ function run(e){
 
 const cardrow = document.querySelector(".card.row"); 
 cardrow.addEventListener("click", run);
-const unorderedList = document.querySelector(".list-group");
-unorderedList.addEventListener("click", run);
+// const unorderedList = document.querySelector(".list-group");
+// unorderedList.addEventListener("click", run);
 
     function run(e){
         if(e.target.className === "form-control"){
             console.log("Filter operation");
         }
-        if(e.target.className === "list-group"){
+        if(e.target.className === "list-group-item danger"){
             console.log("Select operation");
         }
         if(e.target.className === "card-title"){
