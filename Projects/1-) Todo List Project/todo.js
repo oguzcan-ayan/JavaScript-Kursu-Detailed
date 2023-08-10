@@ -13,6 +13,34 @@ function eventListeners() { //All event listeners
     form.addEventListener("submit", addTodo);
     document.addEventListener("DOMContentLoaded", loadAllTodosToUI);
     secondCardBody.addEventListener("click", deleteTodoFromUI);
+    filter.addEventListener("keyup", filterTodos);
+    clearButton.addEventListener("click", clearAllTodos);
+}
+
+function clearAllTodos(e){
+    if(confirm("Are you sure deleting all of Todo elements ?")){ //Deleting all todos from the UI
+       // todoList.innerHTML = "";    //This method is slow
+        while(todoList.firstElementChild != null){
+            todoList.removeChild(todoList.firstElementChild);
+        }
+        localStorage.removeItem("todos");
+    }
+}
+
+function filterTodos(e){
+    const filterValue = e.target.value.toLowerCase();
+    const listItems = document.querySelectorAll(".list-group-item");
+    
+    listItems.forEach(function(listItem){
+        const text = listItem.textContent.toLowerCase();
+        if(text.indexOf(filterValue) === -1){   //It could not found
+                listItem.setAttribute("style", "display : none !important");
+        }
+
+        else{
+            listItem.setAttribute("style", "display : block");
+        }
+    });
 }
 
 function deleteTodoFromUI(e){
@@ -112,7 +140,7 @@ function addTodoToUI(newTodo) { //It inserts an entered string value to the UI
 
     //Creating List Item
     const listItem = document.createElement("li");
-
+    listItem.className = "list-group-item d-flex justify-content-between";
 
     //Creating Link
     const link = document.createElement("a");

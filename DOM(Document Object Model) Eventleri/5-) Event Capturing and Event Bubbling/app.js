@@ -14,6 +14,8 @@ function run(e){
 
 const cardrow = document.querySelector(".card.row"); 
 cardrow.addEventListener("click", run);
+/* const listItem = document.getElementsByTagName("li");
+listItem.addEventListener("click", run); */
 // const unorderedList = document.querySelector(".list-group");
 // unorderedList.addEventListener("click", run);
 
