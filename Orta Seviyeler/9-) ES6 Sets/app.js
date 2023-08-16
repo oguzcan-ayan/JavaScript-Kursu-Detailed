@@ -12,6 +12,7 @@ myset.add(key);
 myset.add({a:1, b:2});
 
 const myset2 = new Set([100, 3.14, "Oğuzcan"]);
+console.log(typeof myset2);
 
 /* console.log(myset);
 console.log(myset2);
@@ -50,3 +51,4 @@ console.log(myset.has(key));
 const array = Array.from(myset);
 console.log(array);
 
+console.log(array, ...key);

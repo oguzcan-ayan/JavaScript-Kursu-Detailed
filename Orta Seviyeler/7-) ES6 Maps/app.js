@@ -69,8 +69,13 @@ cities.set("İstanbul", 20);
 cities.set("Ankara", 5);
 cities.set("İzmir", 8);
 
+cities.delete("İstanbul", 20);
+console.log(cities.has("Ankara"));
+console.log(cities.size);
+console.log(typeof cities);
 //[["İstanbul", 20],["Ankara", 5],["İzmir", 8]]
 const array = Array.from(cities);
 
 console.log(array);
 
+// console.log(array.length);
