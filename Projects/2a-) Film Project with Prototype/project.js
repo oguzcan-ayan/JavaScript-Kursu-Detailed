@@ -65,7 +65,12 @@ function deleteFilm(e){
 }
 
 function clearAllFilms(){
-    ui.clearAllFilmsFromUI();
-    storage.clearAllFilmsFromStorage();
+
+    if(confirm("Are you sure deleting all films?")){
+        ui.displayMessages("You have deleted all films...", "success");
+        ui.clearAllFilmsFromUI();
+        storage.clearAllFilmsFromStorage();
+    }
 }
+
 

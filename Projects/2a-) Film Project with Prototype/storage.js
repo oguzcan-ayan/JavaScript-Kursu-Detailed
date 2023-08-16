@@ -37,7 +37,9 @@ Storage.prototype.deleteFilmFromStorage = function(filmTitle){
 //local storage 'de tutmak istersek JSON.stringify() ile stringe çevirmek zorundayız.
 //local storage 'deki değeri geri çağırdığımızda ise JSON.parse() ile obje tipine geri çeviririz.
 
-
+Storage.prototype.clearAllFilmsFromStorage = function(){
+    localStorage.removeItem("films");
+}
 
 
 

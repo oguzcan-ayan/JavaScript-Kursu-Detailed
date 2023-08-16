@@ -71,7 +71,14 @@ UI.prototype.deleteFilmFromUI = function(element){
 
 UI.prototype.clearAllFilmsFromUI = function(){
        const filmList = document.getElementById("films");
-       filmList.innerHTML = "";
+       //  filmList.innerHTML = "";
+
+    while(filmList.firstElementChild !== null){   //work until a child
+        filmList.firstElementChild.remove();
+    }
+
+
+
 }
 
 
