@@ -64,7 +64,7 @@ console.log(lastMap);
 //Creating Arrays from Maps
 
 const cities = new Map();
-
+const key = [1, 2, 3];
 cities.set("İstanbul", 20);
 cities.set("Ankara", 5);
 cities.set("İzmir", 8);
@@ -77,5 +77,6 @@ console.log(typeof cities);
 const array = Array.from(cities);
 
 console.log(array);
+console.log(array, ...key);
 
 // console.log(array.length);
