@@ -32,7 +32,7 @@ value = todoList.firstElementChild;
 value = todoList.lastElementChild;
 value = todoList.children.length;
 value = todoList.childElementCount;
-
+console.log(value);
 
 value = cardrow;
 value = cardrow.parentNode;

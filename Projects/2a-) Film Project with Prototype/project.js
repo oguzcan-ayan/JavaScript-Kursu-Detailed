@@ -5,6 +5,7 @@ const directorElement = document.querySelector("#director");
 const urlElement = document.getElementById("url");
 const secondCardBody = document.querySelectorAll(".card-body")[1];
 const clearButton = document.getElementById("clear-films");
+const filmList = document.getElementById("films");
 
 //Starting UI Object
 const ui = new UI();
@@ -31,7 +32,8 @@ function addFilm(e){
     const title = titleElement.value.trim();
     const director = directorElement.value.trim();
     const url = urlElement.value.trim();
-
+    
+    /* const sameFilm = Array.from() */
 
 if(title === "" || director === "" || url === ""){
       //Error      
@@ -39,6 +41,10 @@ if(title === "" || director === "" || url === ""){
 
 
 }
+/* else if(){
+    showAlert("danger", "You entered the same film name...");
+    } */
+
 else{
     //New Film
     const newFilm = new Film(title, director, url);

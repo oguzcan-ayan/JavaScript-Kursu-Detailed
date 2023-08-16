@@ -74,18 +74,22 @@ function loadAllTodosToUI(){
 
 function addTodo(e) {
     const newTodo = todoInput.value.trim();
-
+    const sameTodo = Array.from(todoList.children).map(listItem => listItem.textContent.trim());
     if (newTodo === "") {
         showAlert("danger", "Please enter a todo value...");
 
         /* <div class="alert alert-danger" role="alert">
              This is a danger alert—check it out!
            </div> */
-
-    } else {
+    }
+    else if (sameTodo.includes(newTodo)) {
+        showAlert("danger", "You entered the same Todo value...");
+    }
+    else {
         addTodoToUI(newTodo);
         addTodoToStorage(newTodo);
-        showAlert("success", "You entered a right value");
+        showAlert("success", "You entered a value");
+
     }
 
     e.preventDefault();
