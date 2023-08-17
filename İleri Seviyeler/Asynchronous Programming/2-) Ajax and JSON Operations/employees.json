@@ -1,0 +1,41 @@
+
+[
+    {
+    "name" : "Oğuzcan",
+    "surname" : "Ayan",
+    "department" : "Computer Engineer",
+    "salary" : "5000"
+    },
+    {
+    "name" : "Beyza Betül",
+    "surname" : "Ayan",
+    "department" : "Computer Programmer",
+    "salary" : "2000"
+
+    },
+    {
+    "name" : "Elmas",
+    "surname" : "Ayan",
+    "department" : "Housewife",
+    "salary" : "1000"
+    },
+    {
+    "name" : "Ercan",
+    "surname" : "Ayan",
+    "department" : "Taxi Driver",
+    "salary" : "4000"
+
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
