@@ -22,7 +22,7 @@ class Request{
         this.xhr.send();
     } */
 
-    
+   
 /*
     //Second Method (bind)
     get(url){
