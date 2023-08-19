@@ -95,6 +95,25 @@ class Request{
     
             this.xhr.send(JSON.stringify(data));
         }   
+        
+        //  DELETE Request //
+
+        delete(url, callback){
+            this.xhr.open("DELETE", url);  //Connection is open
+            
+            this.xhr.onload = () =>{
+                //Success state
+                if(this.xhr.status === 200){
+                callback(null, `It has been deleted ${this.xhr.responseText}`);    //Our request has finished
+                }
+                else{
+                //Error State
+                callback("DELETE : An error has occurred.", null);
+                }
+            }
+               
+            this.xhr.send();
+        } 
 
 }
 
@@ -143,7 +162,7 @@ const request = new Request();
 
     //  PUT //
 
-request.put("https://jsonplaceholder.typicode.com/albums/5", {userId : 83, title : "Fast and Furious 5"}, function(err, album){
+/* request.put("https://jsonplaceholder.typicode.com/albums/5", {userId : 83, title : "Fast and Furious 5"}, function(err, album){
     if(err === null){
         //Success
         console.log(album);
@@ -152,9 +171,20 @@ request.put("https://jsonplaceholder.typicode.com/albums/5", {userId : 83, title
         //Error
         console.log(err);
     }
+}); */
+
+    // DELETE  //
+
+request.delete("https://jsonplaceholder.typicode.com/albums/8", function(err, response){
+    if(err === null){
+        //Success
+        console.log(response);
+    }
+    else{
+        //Error
+        console.log(err);
+    }
 });
-
-
 
 
 
