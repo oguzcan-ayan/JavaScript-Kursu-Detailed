@@ -95,7 +95,27 @@ class Request{
     
             this.xhr.send(JSON.stringify(data));
         }   
-        
+
+        //  PATCH Request //
+
+        patch(url, data, callback){
+            this.xhr.open("PATCH", url);
+            this.xhr.setRequestHeader("Content-type", "application/json");  //JSON Data Type
+            this.xhr.onload = () => {
+                if(this.xhr.status === 200){
+                //Success state
+                callback(null, this.xhr.responseText);
+                }
+                else{
+                //Error state
+                callback("PATCH : An error has occurred.", null);
+                }
+    
+            }
+    
+            this.xhr.send(JSON.stringify(data));
+        }  
+
         //  DELETE Request //
 
         delete(url, callback){
@@ -114,7 +134,7 @@ class Request{
                
             this.xhr.send();
         } 
-
+   
 }
 
 const request = new Request();
@@ -173,9 +193,22 @@ const request = new Request();
     }
 }); */
 
+    // PATCH //
+
+    request.patch("https://jsonplaceholder.typicode.com/albums/64", {title : "Resident Evil"}, function(err, album){
+        if(err === null){
+            //Success
+            console.log(album);
+        }
+        else{
+            //Error
+            console.log(err);
+        }
+    });
+
     // DELETE  //
 
-request.delete("https://jsonplaceholder.typicode.com/albums/8", function(err, response){
+/* request.delete("https://jsonplaceholder.typicode.com/albums/8", function(err, response){
     if(err === null){
         //Success
         console.log(response);
@@ -185,8 +218,7 @@ request.delete("https://jsonplaceholder.typicode.com/albums/8", function(err, re
         console.log(err);
     }
 });
-
-
+ */
 
 
 
