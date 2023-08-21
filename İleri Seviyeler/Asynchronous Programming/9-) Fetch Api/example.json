@@ -1,0 +1,23 @@
+[
+    {
+        "name" : "Oğuzcan",
+        "age" : 23,
+        "salary" : 5000
+    },
+    {
+        "name" : "Beyza Betül",
+        "age" : 19,
+        "salary" : 3000
+    },
+    {
+        "name" : "Elmas",
+        "age" : 40,
+        "salary" : 10000
+    },
+    {
+        "name" : "Ercan",
+        "age" : 47,
+        "salary" : 15000
+    }
+
+]
