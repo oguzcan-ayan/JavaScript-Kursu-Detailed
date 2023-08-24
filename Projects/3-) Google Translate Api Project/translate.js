@@ -1,6 +1,6 @@
 
 function Translate(word, language){
-    this.apiKey = "7ff13ec0f0msheabe98b6a172545p1e088cjsnc450aafe9c17";
+    this.apiKey = "trnsl.1.1.20180930T080756Z.753c49142579b043.b2798189b8760e7b357c9d23a8736ef0a54be481";
     this.word = word;
     this.language = language;
 
@@ -10,18 +10,30 @@ function Translate(word, language){
 
 }
 
-Translate.prototype.translateWord = function(){
+Translate.prototype.translateWord = function(callback){
 
     //  Ajax Operations
 
-    const endpoint = "https://google-translate1.p.rapidapi.com/language/translate/v2"
+    const endpoint = `https://translate.yandex.net/api/v1.5/tr.json/translate?key=${this.apiKey}&text=${this.word}&lang=${this.language}`;
 
+    this.xhr.open("GET", endpoint);
 
- /*    body: new URLSearchParams({
-		q: 'Hello, world!',
-		target: 'es',
-		source: 'en'
-	}) */
+    this.xhr.onload = () =>{
+        if(this.xhr.status === 200){
+           const json = JSON.parse(this.xhr.responseText);
+           const text = json.text[0];
+
+           callback(null, text);
+           
+        }
+        else{
+            callback("An error has occurred.", null);
+
+        }
+
+    }
+    
+    this.xhr.send();
 };
 
 

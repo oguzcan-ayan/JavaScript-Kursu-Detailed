@@ -25,7 +25,7 @@ function getGitData(e){
     let username = githubNameInput.value.trim();
 
     if(username === ""){
-        alert("Please enter a username!")
+        ui.showError("Please enter a username!");
     }
     else{
         github.getGitHubData(username)
@@ -33,14 +33,18 @@ function getGitData(e){
             if(response.user.message || response.repo.message === "Not Found"){
                 //Error Message
 
-                console.error("An error has occurred.");
+                ui.showError("The user has not been found.");
             }
-            else{
+            else{ 
+                ui.addSearchedUsersToUI(username);
+                Storage.addSearchedUsersToStorage(username);
                 ui.showUserInfo(response.user);
+                ui.showUser("The user has been added");
+                ui.showRepoInfo(response.repo);
             }
-
+            
         })
-        .catch(err => console.log(err));
+        .catch(err => ui.showError(err));
     }
 
     ui.clearInput();    //Clearing input
@@ -50,12 +54,24 @@ function getGitData(e){
 function clearAllSearched(){
     //Clear all of the searched elements
 
+    if(confirm("Are you sure deleting all users?")){
+        Storage.clearAllSearchedUsersFromStorage(); //Clear From Storage
+        ui.clearAllSearchedUsersFromUI();   //Clear From UI
+    }
+
+
 }
 
 function getAllSearched(){
     //Get all of the searched elements from Storage to add to the UI
 
+    let users = Storage.getSearchedUsersFromStorage();
+    let result;
+    users.forEach(function(user){
+        result += `<li class="list-group-item">${user}</li>`; 
 
+    });
 
+    lastUsers.innerHTML = result;
 }
 

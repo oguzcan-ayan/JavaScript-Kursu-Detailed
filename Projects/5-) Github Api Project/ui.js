@@ -6,6 +6,7 @@ class UI{
         this.repoDiv = document.getElementById("repos");
         this.lastUsers = document.getElementById("last-users");
         this.gitInputField = document.getElementById("github-name");
+        this.cardBody = document.querySelector(".search-card.card-body");
 
     }
     
@@ -22,7 +23,7 @@ class UI{
              <hr>
              <div id="fullName"><strong>${user.name}</strong></div>
              <hr>
-             <div id="bio">${user.bio}</div>
+             <div id="bio"><strong>Bio : </strong>${user.bio}</div>
             </div>
           <div class="col-md-8">
                 <button class="btn btn-secondary">
@@ -56,6 +57,93 @@ class UI{
     </div>`;
     }
 
+    showError(message){
+        const div = document.createElement("div");
+        div.className = "alert alert-danger";
+        div.textContent = message;
+
+        this.cardBody.appendChild(div);
+
+        setTimeout(function(){
+
+            div.remove();
+
+        }, 2000);
+    }
+
+    showUser(message){
+        const div = document.createElement("div");
+        div.className = "alert alert-success";
+        div.textContent = message;
+
+        this.cardBody.appendChild(div);
+
+        setTimeout(function(){
+
+            div.remove();
+
+        }, 2000);
+    }
+
+    showRepoInfo(repos){
+
+        this.repoDiv.innerHTML = "";
+
+        repos.forEach(repo => {
+
+            this.repoDiv.innerHTML = `
+            
+            <div class="mb-2 card-body">
+            <div class="row">
+                <div class="col-md-2"> 
+                <a href="${repo.html_url}" target = "_blank" id = "repoName">${repo.name}</a>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-secondary">
+                        Starlar  <span class="badge badge-light" id="repoStar">${repo.stargazers_count}</span>
+                    </button>
+
+                    <button class="btn btn-info">
+                        Forklar  <span class="badge badge-light" id ="repoFork">${repo.forks_count}</span>
+                    </button>
+            
+                </div>
+        </div>
+
+        </div>
+
+            `;
+
+
+        });
+
+    }
+
+    addSearchedUsersToUI(username){
+        let users = Storage.getSearchedUsersFromStorage();
+        
+        if(users.indexOf(username) === -1){
+        // <li class="list-group-item">asdaskdjkasjkşdjşasjd</li>
+            const li = document.createElement("li");
+
+            li.className = "list-group-item";
+            li.textContent = username;
+
+            this.lastUsers.appendChild(li);
+
+        }
+        
+    }
+
+    clearAllSearchedUsersFromUI(){
+        // this.lastUsers.innerHTML = "";   It can be like this way but this way takes a little longer than the other way by browsers.
+
+        while(this.lastUsers.firstElementChild !== null){
+            this.lastUsers.removeChild(this.lastUsers.firstElementChild);
+            
+        }
+
+    }
 }
 
 
