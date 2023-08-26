@@ -79,6 +79,7 @@ async function getCurrency(url){
 
 getCurrency("https://v6.exchangerate-api.com/v6/d02be2b931ff39f6d1e4ce19/latest/USD")
 .then(response => console.log(response))
+.catch(err => console.log(err))
 // .then(response => console.log(response.conversion_rates.TRY))
 
 

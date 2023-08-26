@@ -14,7 +14,6 @@ eventListeners();
 function eventListeners(){
 
     amountElement.addEventListener("input", exchangeCurrency);
-
     firstSelect.onchange = function(){
         currency.changeFirstCurrency(firstSelect.options[firstSelect.selectedIndex].textContent);
         ui.changeFirst();

@@ -21,11 +21,15 @@ function eventListeners(){
 }
 
 function getGitData(e){
-
+    let sameUsername = Array.from(lastUsers.children).map(listItem => listItem.textContent.trim());
     let username = githubNameInput.value.trim();
+    
 
     if(username === ""){
         ui.showError("Please enter a username!");
+    }
+    else if(sameUsername.includes(username)){
+        ui.showError("This username has already been in last-searched stage. Please enter another usernames.");
     }
     else{
         github.getGitHubData(username)
