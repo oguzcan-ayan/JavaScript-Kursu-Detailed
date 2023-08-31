@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Share API</title>
+<style>
+    body{
+        height: 1000px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #content{
+        display: none;
+    }
+    #error{
+        display: none;
+    }
+    #share-btn{
+        padding: 10px;
+        border: 5px solid gray;
+        border-radius: 10px;
+    }
+    #share-btn:hover{
+        background-color: limegreen;
+        color: navy;
+        transition: 2s;
+    }
+</style>
+</head>
+<body>
+
+    <div id="content">You will see this range when you share the content.</div>
+    <div id="error">Oops! You encounter a problem.</div>
+    
+    <button id="share-btn">Share</button>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
