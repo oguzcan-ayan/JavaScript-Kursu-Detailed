@@ -34,6 +34,12 @@ if(title === "" || director === "" || url === ""){
 
 
 }
+
+/* else if(){
+
+    UI.displayMessages("You entered the same movie. Please, enter another movies...", "danger");
+} */
+
 else{
     //New Film
     const newFilm = new Film(title, director, url);
