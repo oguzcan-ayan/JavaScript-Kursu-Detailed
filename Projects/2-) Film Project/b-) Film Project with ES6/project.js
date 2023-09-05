@@ -5,7 +5,7 @@ const directorElement = document.querySelector("#director");
 const urlElement = document.getElementById("url");
 const secondCardBody = document.querySelectorAll(".card-body")[1];
 const clearButton = document.getElementById("clear-films");
-
+const filmList = [];
 
 //Loading all Events
 eventListeners();
@@ -27,18 +27,18 @@ function addFilm(e){
     const director = directorElement.value.trim();
     const url = urlElement.value.trim();
 
-
 if(title === "" || director === "" || url === ""){
       //Error      
     UI.displayMessages("Please, fill all blanks...", "danger");
 
-
 }
 
-/* else if(){
-
-    UI.displayMessages("You entered the same movie. Please, enter another movies...", "danger");
-} */
+else{
+    
+    const sameFilm = filmList.some(film => film.title === title);
+if(sameFilm){
+        UI.displayMessages("You entered the same movie. Please, enter another movie...", "danger");
+    }
 
 else{
     //New Film
@@ -50,12 +50,13 @@ else{
 
     Storage.addFilmToStorage(newFilm);
 
-}
+    filmList.push(newFilm);
+        }
 
     UI.clearInputs(titleElement, directorElement, urlElement);
     e.preventDefault();
+    }
 }
-
 function deleteFilm(e){
     if(e.target.id === "delete-film"){
         UI.deleteFilmFromUI(e.target);

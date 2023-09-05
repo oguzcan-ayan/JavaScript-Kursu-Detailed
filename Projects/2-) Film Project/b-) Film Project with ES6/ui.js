@@ -49,6 +49,7 @@ class UI{
     
     static loadAllFilms(films){
         const filmList = document.getElementById("films");
+        
         films.forEach(function(film){
             filmList.innerHTML += ` <tr>
             <td><img src="${film.url}" class="img-fluid img-thumbnail"></td>
@@ -58,6 +59,7 @@ class UI{
           </tr> 
           <tr>`;
         });
+      
     
     }
     
