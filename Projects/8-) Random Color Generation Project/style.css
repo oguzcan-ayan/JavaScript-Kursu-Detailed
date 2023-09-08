@@ -17,6 +17,11 @@
     color:coral;
 }
 
+#generate-color-btn:hover{
+    background-color: forestgreen;
+    color: darkblue;
+    transition: all 1s;
+}
 
 
 
