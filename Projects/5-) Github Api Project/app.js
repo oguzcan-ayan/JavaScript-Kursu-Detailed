@@ -7,6 +7,7 @@ const githubForm = document.getElementById("github-form");
 const githubNameInput = document.getElementById("github-name");
 const clearLastUsers = document.getElementById("clear-last-users");
 const lastUsers = document.getElementById("last-users");
+const deleteUsers = document.getElementById("delete-user");
 const github = new Github();
 const ui = new UI();
 
@@ -17,6 +18,7 @@ function eventListeners(){
     githubForm.addEventListener("submit", getGitData);
     clearLastUsers.addEventListener("click", clearAllSearched);
     document.addEventListener("DOMContentLoaded", getAllSearched);
+    deleteUsers.addEventListener("click", deleteSearched);
 
 }
 
@@ -53,6 +55,12 @@ function getGitData(e){
 
     ui.clearInput();    //Clearing input
     e.preventDefault();
+}
+
+function deleteSearched(e){
+    if(e.target.id === "delete-user"){
+        ui.clearSearchedUsersFromUI(e.target);
+    }
 }
 
 function clearAllSearched(){

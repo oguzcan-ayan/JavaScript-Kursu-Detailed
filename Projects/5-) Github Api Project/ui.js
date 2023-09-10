@@ -7,7 +7,7 @@ class UI{
         this.lastUsers = document.getElementById("last-users");
         this.gitInputField = document.getElementById("github-name");
         this.cardBody = document.querySelector(".search-card.card-body");
-
+    
     }
     
     clearInput(){
@@ -49,7 +49,9 @@ class UI{
                         <img src="images/mail.png" width="30px"> <span id="email">${user.email}</span>
                         
                     </li>
-                    
+                    <li>
+                    <a href="#" id = "delete-user" class = "btn btn-danger">Kullanıcıyı sil</a>
+                    </li>
                 </div>
                    
                 
@@ -133,6 +135,10 @@ class UI{
 
         }
         
+    }
+
+    clearSearchedUsersFromUI(element){
+        element.parentElement.parentElement.parentElement.remove();
     }
 
     clearAllSearchedUsersFromUI(){
