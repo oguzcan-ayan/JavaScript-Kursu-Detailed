@@ -12,6 +12,7 @@
 .header-container {
   display: flex;
   flex-direction: column;
+  height: auto;
 }
 .header-container .ecommerce-title-top ul {
   display: flex;
@@ -28,9 +29,155 @@
 .header-container .ecommerce-title-top ul li a:hover {
   color: rgb(100, 100, 100);
 }
-.header-container .ecommerce-title a {
+.header-container .ecommerce-title {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.header-container .ecommerce-title .page-title {
+  margin-top: 30px;
+  margin-left: 25px;
+}
+.header-container .ecommerce-title .page-title a {
   color: rgb(40, 40, 40);
   font-size: 35px;
-  font-weight: 700;
+  font-weight: 500;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.header-container .ecommerce-title .searchbox {
+  display: flex;
+  width: 700px;
+  margin-top: 30px;
+}
+.header-container .ecommerce-title .searchbox input {
+  position: relative;
+  text-indent: 15px;
+  margin-left: 60px;
+  width: 600px;
+  height: 45px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(240, 240, 240);
+}
+.header-container .ecommerce-title .searchbox i {
+  color: orangered;
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 625px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.header-container .ecommerce-title .user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-container .ecommerce-title .user-info a {
+  margin-right: 30px;
+  margin-top: 30px;
+  font-size: 15px;
+}
+.header-container .ecommerce-title .user-info a:hover {
+  transition: 500ms all;
+  color: orangered;
+}
+.header-container .ecommerce-title .user-info a i {
+  padding: 2px;
+}
+.header-container #title-scroll.active {
+  position: fixed;
+  animation: all 5s ease-in-out;
+}
+
+.nav-products {
+  display: flex;
+}
+.nav-products .products {
+  width: 100%;
+}
+.nav-products .products ul {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-products .products ul li a {
+  color: rgb(60, 60, 60);
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.slider-content {
+  overflow: hidden;
+  display: flex;
+  width: 100vw;
+  height: 150px;
+}
+.slider-content .slide, .slider-content .slide-active {
+  position: relative;
+  width: 100%;
+}
+.slider-content .slide .inner-content, .slider-content .slide-active .inner-content {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.slider-content .slide .inner-content img, .slider-content .slide-active .inner-content img {
+  width: 60px;
+  height: 60px;
+}
+.slider-content .slide .inner-content span, .slider-content .slide-active .inner-content span {
+  color: rgb(50, 50, 50);
+  font-size: 15px;
+  font-weight: 600;
+}
+.slider-content .slide-active .inner-content {
+  opacity: 1;
+}
+.slider-content #slider-content.active {
+  opacity: 1;
+}
+
+.indicators {
+  width: 0;
+  height: 0;
+  position: relative;
+}
+.indicators .prev {
+  position: absolute;
+  top: -120px;
+  left: 0px;
+}
+.indicators .next {
+  position: absolute;
+  top: -120px;
+  right: 0px;
+}
+.indicators button {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  color: rgb(150, 150, 150);
+  opacity: 0.5;
+  background: none;
+  border: none;
+}
+.indicators button:hover {
+  cursor: pointer;
+  opacity: 1;
+  color: rgb(75, 75, 75);
+  transition: all 1s;
+}
+.indicators button:focus {
+  outline: 0;
+}
+
+.abc {
+  height: 200vh;
 }/*# sourceMappingURL=style.css.map */
