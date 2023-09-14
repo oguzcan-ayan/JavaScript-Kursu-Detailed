@@ -13,7 +13,7 @@
 .header-container{
     display: flex;
     flex-direction: column;
-    height: 150px;
+    height: 130px;
 
     .ecommerce-title-top{ 
     ul{
@@ -38,26 +38,26 @@
         width: 100%;
         background-color: rgba(255, 255, 255, 1);
         z-index: 100;
-        height: 150px;
+        height: 100px;
      .page-title{ 
-        margin-top: 30px;
-        margin-left: 25px;
+        margin-top: 15px;
+        margin-left: 20px;
         a{
         color: rgb(40, 40, 40);
         font-size: 35px;
         font-weight: 500;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-        &:hover{
-            color: orangered;
-            transition: all 500ms;
-        }
+            img{
+                width: 100px;
+                height: 70px;
+            }
     }
     }
     .searchbox{
         display: flex;
         width: 700px;
         margin-top: 30px;
+        margin-left: 20px;
         input{
           position: relative;  
           text-indent: 15px;   
@@ -84,6 +84,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
             a{
                 margin-right: 30px;
                 margin-top: -20px;
@@ -420,7 +421,7 @@
                                 span{
                                     margin-left: 3px;
                                     color: #fff;
-                                    font-size: 10px;
+                                    font-size: 9px;
                                     line-height: 10px;
                                     text-align: initial;
                                     width: 48px;
@@ -519,9 +520,231 @@
     }
 
 
+    .middle-mega-september{
+        display: grid;
+        margin-top: 50px;
+        margin-left: 50px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        div{
+            
+         a {
+          position: relative;
+    
+          img{
+            width: 380px;
+            height: 190px;
+            border-radius: 10px;
+          }
+    
+          span{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            background-color: black;
+            width: 100%;
+            height: 40px;
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(200, 200, 200);
+            border-radius: 0px 0px 10px 10px;
+            text-indent: 10px;
+            line-height: 38px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+    
+            &:hover{
+                transition: background-color 300ms;
+                background-color: rgb(255, 160, 52);
+                
+            }
+          }
+    
+        }
+      }
+    }
+
+    .ecommerce-sub-content{
+        margin: 50px 50px 30px 50px;
+        width: 1200px;
+        padding-top: 30px;
+        line-height: 1.7;
+        border-top: 1px solid #d4d4d4;
+        color: #333;
+        background-color: #fff;
+
+        .sub-section1{
+
+            .sub-content-title1{
+                width: 100%;
+
+                h2{
+                    height: 25px;
+                    line-height: 25px;
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                    font-weight: bolder;
+                }
+            }
+            .sub-content{
+                p{
+                    font-size: 13px;
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                    text-align: justify;
+                }
+
+            }
+        }
+        .sub-section2{
+
+            .sub-content-title2{
+                width: 100%;
+
+                h3{
+                    font-weight: 500;
+                    font-size: 18px;
+                    margin-top: 5px;
+                }
+            }
+            .sub-content{
+                p{
+                    margin-bottom: 5px;
+                    text-align: justify;
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+
+            }
+        }
+        .sub-section3{
+            .sub-content-title2{
+                width: 100%;
+
+                h3{
+                    font-weight: 500;
+                    font-size: 18px;    
+                    margin-top: 5px;
+                }
+            }
+            .sub-content{
+
+                p{
+                    margin-bottom: 5px;
+                    text-align: justify;
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+
+            }
+        }
+        .sub-section4{
+            .sub-content-title2{
+                width: 100%;
+                h3{
+                    font-weight: 500;
+                    font-size: 18px;
+                    margin-top: 5px;
+                }
+            }
+            .sub-content{
+
+                p{
+                    margin-bottom: 5px;
+                    text-align: justify;
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+
+            }
+        }
+        .sub-section5{
+            .sub-content-title2{
+                width: 100%;
+                h3{
+                    font-weight: 500;
+                    font-size: 18px;
+                    margin-top: 5px;
+                }
+            }
+            .sub-content{
+
+                p{
+                    margin-bottom: 5px;
+                    text-align: justify;
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+
+            }
+        }
+        .sub-section6{
+            .sub-content-title2{
+                width: 100%;
+                h3{
+                    font-weight: 500;
+                    font-size: 18px;
+                    margin-top: 5px;
+                }
+            }
+            .sub-content{
+
+                p{
+                    font-size: 13px;
+                    color: rgb(27, 27, 27);
+                    text-align: justify;
+                    text-decoration-style: solid;
+                    text-decoration-thickness: auto;
+                 a{
+                    color: #1b1b1b;
+                    text-align: justify;
+                    font-size: 13px;
+                }
+              }
+            }
+        }
+    }
+
+    .footer-top{
+
+        .popular-brand-category-container{
+                display: flex;
+
+            .popular-brand-category-inner{
+                display: flex;
+
+                .popular-brand-shops{
+                    .brand-shops-title{
+                        display: flex;
+                    }
+
+                    .brand-shops-content{
+                        display: flex;
+                    }
+                }
+
+                .popular-pages{
+
+                    .pages-title{
+                        display: flex;
+                    }
+
+                    .pages-content{
+                        display: flex;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
 
 .abc{
     height: 200vh;
 } 
+
 
 

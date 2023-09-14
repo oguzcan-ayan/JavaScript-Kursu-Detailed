@@ -2,12 +2,12 @@
 
 const titleScroll = document.getElementById("title-scroll");
 
-window.addEventListener('scroll', function(e){
+window.addEventListener('scroll', function(){
     if(titleScroll){
-        if(this.scrollY >= 140 && !titleScroll.className.includes("active")){
+        if(this.scrollY >= 350 && !titleScroll.className.includes("active")){
             titleScroll.classList.add("active")
         }
-        else if(this.scrollY < 140 && titleScroll.className.includes("active")){
+        else if(this.scrollY < 350 && titleScroll.className.includes("active")){
             titleScroll.classList.remove("active");
         }
     }
@@ -99,9 +99,9 @@ let count = 0;
 
 document.getElementById('next').addEventListener("click", () => {
     count++;
-    const translateValue = count * -110;
-    document.getElementById('start-slider-content').style = `transform: translateX(${translateValue}%);`
-    if(-translateValue >= 110){
+    const translateValue = count * 5;
+    document.getElementById('start-slider-content').style = `transform: translateX(${-translateValue}%);`
+    if(translateValue >= 110){
         count = 0;
     }
 });
@@ -111,8 +111,8 @@ document.getElementById('prev').addEventListener("click", () => {
     }
     else {
         count--;
-        const translateValue = count * -50;
-        document.getElementById('start-slider-content').style = `transform: translateX(${translateValue}%);`
+        const translateValue = count * -5;
+        document.getElementById('start-slider-content').style = `transform: translateX(${-translateValue}%);`
     }
 
 });
