@@ -86,8 +86,9 @@
             justify-content: center;
 
             a{
-                margin-right: 30px;
-                margin-top: -20px;
+                
+                margin-left: 60px;
+                margin-top: 10px;
                 font-size: 13px;
                 color: rgb(50, 50, 50);
                 &:hover{
@@ -329,8 +330,8 @@
 .middle1-slider-content{
     margin-top: 20px;
     margin-left: 50px;
-    width: 100%;
-    background-color: rgb(255, 245, 233);
+    width: 93%;
+    background-color:#FFFAF6;
     border-radius: 7px;
     height: 400px;
     
@@ -802,15 +803,163 @@
 
         .footer-middle-bottom{
             .footer-middle{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                background-color: #000;
+                color: #fff;
                 .footer-info{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 1080px;
+                    padding-top: 50px;
+                    padding-bottom: 55px;
 
-                    div{
+                    .footer-sub-info1{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
 
+                    .trendyol-info a{
+                        color: white;
+                        font-size: 13px; 
+                       
+                        h4{
+                        color: white;
+                        font-size: 22px;
+                        padding-bottom: 5px;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+
+                    }   
+                }
+                    .trendyol-info ul{
+                       
+                        li{
+                            margin: 17px 0 0 0;
+                            a{
+                                font-size: 13px;
+                                     
+                            }
+                        }
+                    }    
+                    
+                    .companies-cards{
+
+                        ul li{
+            
+                         p{
+                            margin-top: 25px;
+                            font-size: 15px;
+                            font-weight: 600;
+    
+                        }
+                         .troy-img{
+                            display: inline-block;
+                            img{
+                            width: 55px;
+                            height: 25px;
+                            margin-right: 13px;
+                         }
+                        }
+                         .master-card-img{
+                            display: inline-block;
+
+                            img{
+                            width: 60px;
+                            height: 35px;
+                            position: relative;
+                            top: 6px;
+                         }
+                        }
+                         .visa-img{ 
+                            display: inline-block;
+
+                            img{
+                             width: 75px;
+                             height: 55px;
+                             position: relative;
+                             top: 15px;
+                         }
+                        }
+                         .amex-img{ 
+                            display: inline-block;
+                            img{
+                             width: 50px;
+                             height: 40px;
+                             position: relative;
+                             top: 5px;
+                             
+                         }
+                       }
+                      }
                     }
+                
+
+                    .about-us ul{
+
+                            a{
+
+                                h4{
+                                color: white;
+                                font-size: 22px;
+                                padding-bottom: 5px;
+                                margin: 0 0 17px 0;
+                                }
+                            }
+
+                            li{
+                                margin: 17px 0 0 0;
+                                a{
+                                    font-size: 13px;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        .download-stores ul{
+
+                            li {
+                                margin: 17px 0 0 0;
+                                color: #fff;
+                                p{
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    padding-bottom: 7px;
+                                }
+
+                                .mobile-apps{
+                                    height: 100px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    a{
+                                      
+                                        img{
+                                            width: 150px;
+                                            height: 40px;
+                                            border-radius: 5px;
+                                        }
+                                    }
+
+                                    .google-play-store{
+                                        
+                                        img{
+                                            position: relative;
+                                            right: 10px;
+                                            width: 170px;
+                                            height: 60px;
+                                        }
+                                    }
+
+                                }
+                            }
+
+                        }
+                    }
+                    
                 }
             }
             .footer-bottom{
-                .footer-sub-info{
+                .footer-sub-info2{
                     .footer-sub-info-left{
 
                         div{
@@ -841,10 +990,6 @@
                 
             }
         }
-
-.abc{
-    height: 200vh;
-} 
 
 
 
