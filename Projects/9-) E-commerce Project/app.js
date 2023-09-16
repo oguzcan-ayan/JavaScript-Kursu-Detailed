@@ -1,5 +1,6 @@
 // // import tt from './data.js'
 
+//header-scroll
 const titleScroll = document.getElementById("title-scroll");
 
 window.addEventListener('scroll', function(){
@@ -95,6 +96,7 @@ Object.entries(tt).map(el => console.log(el)) */
 
 divElementim.innerHTML += element; */
 
+// slider 
 let count = 0;
 
 document.getElementById('next').addEventListener("click", () => {
@@ -117,5 +119,18 @@ document.getElementById('prev').addEventListener("click", () => {
 
 });
 
+//go-product-page
+const productLink = document.getElementById("product-link");
+const productPage = document.getElementById("product-page");
 
+productLink.addEventListener("click", e => {
+
+   e.preventDefault();
+
+    fetch("product.html")
+    .then(response => response.text())
+    .then(data => 
+     productPage.innerHTML = data)
+     .catch(error => console.error("An error has occurred.", error));
+});
 
