@@ -120,10 +120,14 @@
   font-weight: 600;
   margin-left: 15px;
   margin-right: 15px;
+  letter-spacing: 0.2px;
 }
 .nav-products .products ul li a:hover {
   color: orangered;
-  transition: 500ms all;
+  transition: 200ms all;
+  -webkit-text-decoration: 2px underline;
+          text-decoration: 2px underline;
+  text-decoration-color: orangered;
 }
 
 .start-slider-content {
@@ -210,15 +214,15 @@
   display: flex;
   width: 350px;
   height: 70px;
-  border: 2px solid green;
+  border: none;
   border-radius: 6px;
-  background-color: rgb(195, 250, 220);
+  background-color: #EFFBF5;
   margin-left: 60px;
   margin-right: 50px;
 }
 .different-products .add-basket a {
   font-weight: 700;
-  color: rgb(14, 133, 14);
+  color: #168451;
   margin-top: 20px;
   margin-left: 40px;
 }
@@ -226,14 +230,14 @@
   display: flex;
   width: 400px;
   height: 70px;
-  border: 2px solid orange;
+  border: none;
   border-radius: 6px;
-  background-color: rgb(248, 235, 194);
+  background-color: #FEF4EC;
   margin-right: 50px;
 }
 .different-products .famous-products a {
   font-weight: 700;
-  color: rgb(155, 97, 42);
+  color: #B85106;
   margin-top: 20px;
   margin-left: 80px;
 }
@@ -241,14 +245,14 @@
   display: flex;
   width: 400px;
   height: 70px;
-  border: 2px solid rgb(224, 94, 207);
+  border: none;
   border-radius: 6px;
-  background-color: rgb(255, 217, 222);
+  background-color: #FEF0F2;
   margin-right: 50px;
 }
 .different-products .flash-products a {
   font-weight: 700;
-  color: rgb(197, 6, 149);
+  color: #C80849;
   margin-top: 20px;
   margin-left: 130px;
 }
@@ -277,7 +281,7 @@
   height: 40px;
   font-size: 14px;
   font-weight: 600;
-  color: rgb(200, 200, 200);
+  color: #FFFFFF;
   border-radius: 0px 0px 10px 10px;
   text-indent: 10px;
   line-height: 38px;
@@ -287,7 +291,7 @@
 }
 .start-mega-september div a span:hover {
   transition: background-color 300ms;
-  background-color: rgb(255, 160, 52);
+  background-color: #F68428;
 }
 
 .middle1-slider-content {
@@ -388,7 +392,7 @@
 .middle1-slider-content .middle-slider-content .slider-products a .image-container .stamp .stamp-top .truck-stamp .inner span {
   margin-left: 3px;
   color: #fff;
-  font-size: 9px;
+  font-size: 9.4px;
   line-height: 10px;
   text-align: initial;
   width: 48px;
@@ -490,7 +494,7 @@
   height: 40px;
   font-size: 14px;
   font-weight: 600;
-  color: rgb(200, 200, 200);
+  color: #FFFFFF;
   border-radius: 0px 0px 10px 10px;
   text-indent: 10px;
   line-height: 38px;
@@ -500,7 +504,7 @@
 }
 .middle-mega-september div a span:hover {
   transition: background-color 300ms;
-  background-color: rgb(255, 160, 52);
+  background-color: #F68428;
 }
 
 .ecommerce-sub-content {
@@ -688,6 +692,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  height: 475px;
   background-color: #000;
   color: #fff;
 }
@@ -719,6 +724,9 @@
 }
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .trendyol-info ul li a {
   font-size: 13px;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .companies-cards {
+  margin-bottom: 200px;
 }
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .companies-cards ul li p {
   margin-top: 25px;
@@ -773,6 +781,9 @@
   font-size: 13px;
   color: #fff;
 }
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .download-stores {
+  margin-bottom: 135px;
+}
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .download-stores ul li {
   margin: 17px 0 0 0;
   color: #fff;
@@ -797,4 +808,180 @@
   right: 10px;
   width: 170px;
   height: 60px;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .campaigns a h4 {
+  color: white;
+  font-size: 22px;
+  padding-bottom: 5px;
+  margin: 0 0 17px 0;
+  font-weight: 400;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .campaigns ul li {
+  margin: 20px 0 0 0;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .campaigns ul li a {
+  font-size: 13px;
+  color: #fff;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .social-media-tags {
+  margin-bottom: 140px;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .social-media-tags ul li {
+  position: relative;
+  top: 10px;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .social-media-tags ul li .social-media {
+  font-size: 16px;
+  font-weight: 600;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .social-media-tags ul li .media-tags {
+  height: 100px;
+  margin-top: 20px;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .social-media-tags ul li .media-tags a {
+  width: 50px;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .social-media-tags ul li .media-tags a i {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .social-media-tags ul li .media-tags .facebook-logo:hover {
+  background-color: #3658A1;
+  border-color: #3658A1;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .social-media-tags ul li .media-tags .instagram-logo:hover {
+  background-color: #BA2255;
+  border-color: #BA2255;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .social-media-tags ul li .media-tags .twitter-logo:hover {
+  background-color: #508AD4;
+  border-color: #508AD4;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .social-media-tags ul li .media-tags .youtube-logo:hover {
+  background-color: #E22231;
+  border-color: #E22231;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .help a h4 {
+  font-size: 22px;
+  padding-bottom: 5px;
+  margin: 0 0 17px 0;
+  font-weight: 400;
+  color: white;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .help ul li {
+  margin: 0 0 20px 0;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .help ul li a {
+  font-size: 13px;
+  color: white;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .security-policy {
+  margin-bottom: 130px;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .security-policy ul li {
+  margin: 7px 0 0 0;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .security-policy ul li .change-country {
+  position: relative;
+  bottom: 16px;
+  width: 110px;
+  height: 25px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid white;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .security-policy ul li .security-stamps {
+  display: flex;
+  align-items: center;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .security-policy ul li .security-stamps .etbis .etbis-logo {
+  width: 125px;
+  height: 100px;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .security-policy ul li .security-stamps .etbis .etbis-logo img {
+  width: 83px;
+  height: 93px;
+  margin-right: 30px;
+  padding: 5px;
+  background-color: #fff;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .security-policy ul li .security-stamps .tr-go .tr-go-logo {
+  width: 60px;
+  height: 60px;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .security-policy ul li .security-stamps .tr-go .tr-go-logo img {
+  border-radius: 5px;
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+.footer-middle-bottom .footer-bottom {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #2d2d2d;
+}
+.footer-middle-bottom .footer-bottom .footer-sub-info2 {
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-middle-bottom .footer-bottom .footer-sub-info2 .footer-sub-info-left {
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+}
+.footer-middle-bottom .footer-bottom .footer-sub-info2 .footer-sub-info-right ul li {
+  padding: 0 10px;
+  float: left;
+  color: #999999;
+}
+.footer-middle-bottom .footer-bottom .footer-sub-info2 .footer-sub-info-right ul li a {
+  color: white;
+  font-size: 12px;
+}
+
+.scroll-to-up .up-button {
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 18px;
+  border-bottom-width: 2px;
+  position: fixed;
+  bottom: 20px;
+  cursor: pointer;
+  width: 110px;
+  height: 40px;
+  line-height: 42px;
+  margin: 5px;
+  right: 20px;
+  will-change: scroll-position;
+  backface-visibility: hidden;
+}
+.scroll-to-up .up-button i {
+  float: left;
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  margin: 10px 0 0 7px;
+}
+.scroll-to-up .up-button span {
+  color: #666666;
+  font-size: 13px;
+  float: left;
+  font-weight: 600;
+  margin-left: 7px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
