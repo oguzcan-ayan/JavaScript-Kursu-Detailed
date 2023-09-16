@@ -130,7 +130,7 @@ productLink.addEventListener("click", e => {
     fetch("product.html")
     .then(response => response.text())
     .then(data => 
-     productPage.innerHTML = data)
+     productPage.innerHTML += data)
      .catch(error => console.error("An error has occurred.", error));
 });
 
