@@ -105,6 +105,8 @@
 }
 .nav-products .products {
   width: 100%;
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 10px;
 }
 .nav-products .products ul {
   margin-top: 20px;
@@ -166,7 +168,7 @@
   white-space: nowrap;
 }
 .start-slider-content .slide .inner-content span:hover {
-  transition: 500ms all;
+  transition: 300ms all;
   color: orangered;
   cursor: pointer;
 }
