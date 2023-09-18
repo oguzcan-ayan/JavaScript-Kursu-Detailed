@@ -363,6 +363,342 @@
   font-weight: 600;
   right: 10px;
 }
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom {
+  border-bottom: 1px solid rgba(151, 151, 151, 0.2);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .bargello-parfume h1 {
+  line-height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .bargello-parfume h1 a {
+  color: #333;
+  font-weight: 400;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .bargello-parfume h1 a:hover {
+  text-decoration: underline;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .bargello-parfume h1 span {
+  color: #333;
+  font-weight: normal;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  height: 18px;
+  position: relative;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .scoring-phase {
+  display: inline-block;
+  position: relative;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .scoring-phase .scoring {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .scoring-phase .scoring span {
+  color: #333;
+  font-size: 16px;
+  height: 18px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .scoring-phase .scoring .stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .scoring-phase .scoring .stars img {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .scoring-phase .scoring .separator {
+  margin-top: 2px;
+  height: 3px;
+  width: 3px;
+  background-color: #999;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .evaluating-phase {
+  display: inline-block;
+  position: relative;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .evaluating-phase .evaluating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .evaluating-phase .evaluating a {
+  color: #666;
+  font-size: 12px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .evaluating-phase .evaluating a:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .evaluating-phase .evaluating a span {
+  font-size: 12px;
+  color: #333;
+  font-weight: 600;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .evaluating-phase .evaluating a span:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .evaluating-phase .evaluating img {
+  width: 18px;
+  height: 14px;
+  vertical-align: middle;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .evaluating-phase .evaluating .separator {
+  margin-top: 4px;
+  height: 3px;
+  width: 3px;
+  background-color: #999;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .question-answer-phase {
+  display: inline-block;
+  position: relative;
+  left: 10px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .question-answer-phase .question-answer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .question-answer-phase .question-answer a {
+  color: #666;
+  font-size: 12px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .question-answer-phase .question-answer a:hover {
+  text-decoration: underline;
+  color: orangered;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .question-answer-phase .question-answer a span {
+  font-size: 12px;
+  color: #333;
+  font-weight: 600;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .question-answer-phase .question-answer a span:hover {
+  color: orangered;
+  text-decoration: underline;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .favourite-phase {
+  display: inline-block;
+  position: relative;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .favourite-phase .favourite {
+  position: relative;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  color: #666;
+  font-size: 12px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .favourite-phase .favourite i {
+  position: relative;
+  left: 10px;
+  width: 14px;
+  height: 12px;
+  font-size: 12px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .scoring-evaluating-question-answer-favourite-phase .favourite-phase .favourite span {
+  position: relative;
+  left: 10px;
+  color: #333;
+  font-size: 12px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .product-price {
+  display: flex;
+  height: 24px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-title-bottom .title-info .product-price span {
+  font-size: 24px;
+  line-height: 24px;
+  color: #f27a1a;
+  font-weight: 500;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .add-to-basket {
+  cursor: pointer;
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  background: #f27a1a;
+  letter-spacing: 0.5px;
+  transition: all 0.3s step-start;
+  border: none;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .add-to-basket div {
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 18px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .add-to-basket-favourite-button {
+  display: flex;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .add-to-basket-favourite-button .favourite-button {
+  cursor: pointer;
+  display: inline-block;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .add-to-basket-favourite-button .favourite-button button {
+  cursor: pointer;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  margin: 0 0 0 15px;
+  border-radius: 50%;
+  border: 1px solid #e6e6e6;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .add-to-basket-favourite-button .favourite-button button:hover {
+  background-color: white;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .add-to-basket-favourite-button .favourite-button button i {
+  color: #8c8c8c;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .add-to-basket-favourite-button .favourite-button button i:hover {
+  color: orangered;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .delivery-content {
+  display: flex;
+  margin-top: 20px;
+  background-color: #effbf5;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: start;
+  justify-content: start;
+  width: 100%;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .delivery-content .delivery-content-inner {
+  font-size: 13px;
+  color: #333333;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .delivery-content .delivery-content-inner i {
+  color: #0BC15C;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .delivery-content .delivery-content-inner strong {
+  margin-left: 5px;
+  color: #000;
+  font-weight: 400;
+  font-size: 13px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .seller-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 25px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .seller-info a {
+  margin-right: 10px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .seller-info a img {
+  width: 165px;
+  height: 40px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-properties > div {
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 24px 0 16px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-properties > div + div {
+  margin-top: 10px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-properties > div + div ul {
+  height: 267px;
+  line-height: 28px;
+  overflow: hidden;
+  font-size: 13px;
+  color: #666;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-properties > div + div ul li {
+  font-size: 13px;
+  opacity: 0.9;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-properties > div + div ul li .list-dot {
+  display: inline-block;
+  background-color: #f27a1a;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-left: 0;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-properties > div + div ul li .brand-seller {
+  position: relative;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #333333;
+  font-size: 13px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .product-properties > div + div .opacity-layout {
+  position: relative;
+  margin-top: -30px;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .all-features-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 555;
+  margin-left: 60px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .all-features-button a {
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  letter-spacing: 1.2px;
+  color: #333;
+  padding: 12px 64px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .all-features-button a:hover {
+  color: orangered;
+  background-color: #FDF4EC;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .all-features-button a i {
+  margin-left: 10px;
+  margin-top: 2px;
+  font-size: 10px;
+  padding-left: 10px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-middle-content .all-features-button-line {
+  width: 100%;
+  height: 10px;
+  border-top: 1px solid #e6e6e6;
+}
 
 .abc {
   height: 200vh;

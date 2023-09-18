@@ -393,9 +393,375 @@
                                 
                             }
                         }
+
+                        .product-title-bottom{
+                            border-bottom: 1px solid rgba(151, 151, 151, .2);
+                            padding-bottom: 16px;
+                            margin-bottom: 16px;
+                            .title-info{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-start;
+                                .bargello-parfume{
+                                    h1{
+                                        line-height: 25px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+
+                                        a{
+                                            color: #333;
+                                            font-weight: 400;
+
+                                            &:hover{
+                                                text-decoration: underline;
+                                            }
+                                        }
+
+                                        span{
+                                            color: #333;
+                                            font-weight: normal;
+                                        }
+                                    }
+                                }
+                                
+                                .scoring-evaluating-question-answer-favourite-phase{
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 16px;
+                                    margin-top: 8px;
+                                    height: 18px;
+                                    position: relative;
+                                    .scoring-phase{
+                                        display: inline-block;
+                                        position: relative;
+                                        .scoring{
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 8px;
+
+                                            span{
+                                                color: #333;
+                                                font-size: 16px;
+                                                height: 18px;
+                                                line-height: 20px;
+                                                font-weight: 600;
+                                            }
+                                            .stars{
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                
+                                                img{
+                                                    width: 25px;
+                                                    height: 25px;
+                                                    font-size: 25px;
+                                                }
+                                            }
+                                            .separator{
+                                                margin-top: 2px;
+                                                height: 3px;
+                                                width: 3px;
+                                                background-color: #999;
+                                                border-radius: 50%;
+                                                margin-left: 8px;
+                                                margin-right: 8px;
+                                            }
+                                        }
+                                    }
+
+                                    .evaluating-phase{
+                                        display: inline-block;
+                                        position: relative;
+
+                                        .evaluating{
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 4px;
+                                        cursor: pointer;
+
+                                        a{
+                                            color: #666;
+                                            font-size: 12px;
+                                            &:hover{
+                                                color: orangered;
+                                                text-decoration: underline;
+                                            }
+                                            span{
+                                                font-size: 12px;
+                                                color: #333;    
+                                                font-weight: 600;
+                                                &:hover{
+                                                    color: orangered;
+                                                    text-decoration: underline;
+                                                }
+                                            }
+                                        }
+
+                                        img{
+                                            width: 18px;
+                                            height: 14px;
+                                            vertical-align: middle;
+                                           
+                                          }
+
+                                          .separator{
+                                            margin-top: 4px;
+                                            height: 3px;
+                                            width: 3px;
+                                            background-color: #999;
+                                            border-radius: 50%;
+                                            margin-left: 8px;
+                                            margin-right: 8px;
+                                            }
+
+                                        }
+                                    }
+
+                                    .question-answer-phase{
+                                        display: inline-block;
+                                        position: relative;
+                                        left: 10px;
+                                        .question-answer{
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 4px;
+                                            cursor: pointer;
+                                            a{
+                                                color: #666;
+                                                font-size: 12px;
+                                                &:hover{
+                                                    text-decoration: underline;
+                                                    color: orangered;
+                                                }
+                                                span{
+                                                    font-size: 12px;
+                                                    color: #333;    
+                                                    font-weight: 600;
+                                                    &:hover{
+                                                        color: orangered;
+                                                        text-decoration: underline;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .favourite-phase{
+                                        display: inline-block;
+                                        position: relative;
+                                        .favourite{
+                                            position: relative;
+                                            left: 10px;
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 4px;
+                                            cursor: pointer;
+                                            color: #666;
+                                            font-size: 12px;
+                                            i{
+                                                position: relative;
+                                                left: 10px;
+                                                width: 14px;
+                                                height: 12px;
+                                                font-size: 12px;
+                                            }
+                                            span{
+                                                position: relative;
+                                                left: 10px;
+                                                color: #333;
+                                                font-size: 12px;
+                                            }
+                                        }   
+                                    }
+                                }
+
+                                .product-price{
+                                      display: flex;
+                                      height: 24px;
+
+                                      span{
+                                        font-size: 24px;
+                                        line-height: 24px;
+                                        color: #f27a1a;
+                                        font-weight: 500;
+                                      }                                  
+                                }
+                            }
+                        }
+                        .add-to-basket{
+                            cursor: pointer;
+                            width: 100%;
+                            height: 48px;
+                            border-radius: 8px;
+                            background: #f27a1a;
+                            letter-spacing: 0.5px;
+                            transition: all .3s step-start;
+                            border: none;
+                            div{
+                                color: #fff;
+                                cursor: pointer;
+                                overflow: hidden;
+                                font-size: 18px;
+                            }
+                        }
+                        .add-to-basket-favourite-button{
+                            display: flex;
+                            .favourite-button{
+                                cursor: pointer;
+                                display: inline-block;
+                                button{
+                                    cursor: pointer;
+                                    position: relative;
+                                    width: 48px;
+                                    height: 48px;
+                                    margin: 0 0 0 15px;
+                                    border-radius: 50%;
+                                    border: 1px solid #e6e6e6;
+                                    &:hover{
+                                        background-color: white;
+                                    }
+                                    i{
+                                        color: #8c8c8c;
+                                        &:hover{
+                                            color: orangered;
+                                        }
+                                    }
+                                }
+                        }
+                      }
+
+                      .delivery-content{
+                        display: flex;
+                        margin-top: 20px;
+                        background-color: #effbf5;
+                        padding: 8px;
+                        border-radius: 8px;
+                        text-align: start;
+                        justify-content: start;
+                        width: 100%;
+                        .delivery-content-inner{
+                            font-size: 13px;
+                            color: #333333;
+                            i{
+                                color: #0BC15C;
+                            }
+                            strong{
+                                margin-left: 5px;
+                                color: #000;
+                                font-weight: 400;
+                                font-size: 13px;
+                            }
+                        }
+                      }
+
+                      .seller-info{
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        padding-top: 25px;
+
+                        a{
+                            margin-right: 10px;
+                            border-radius: 8px;
+                            background-color: #f5f5f5;
+
+                            img{
+                                width: 165px;
+                                height: 40px;
+                               
+                            }
+                        }
+                      }
+                      .product-properties{
+                        > div{
+                            color: #333;
+                            font-size: 14px;
+                            font-weight: 600;
+                            margin: 24px 0 16px;
+                        }
+
+                        > div + div{
+                            margin-top: 10px;
+                            ul{
+                                height: 267px;
+                                line-height: 28px;
+                                overflow: hidden;
+                                font-size: 13px;
+                                color: #666;
+                                li{
+                                    font-size: 13px;
+                                    opacity: 0.9;
+                                    .list-dot{
+                                        display: inline-block;
+                                        background-color: #f27a1a;
+                                        height: 6px;
+                                        width: 6px;
+                                        border-radius: 50%;
+                                        margin-right: 8px;
+                                        margin-left: 0; 
+
+                                    }
+                                    .brand-seller{
+                                        position: relative;
+                                        cursor: pointer;
+                                        text-decoration: underline;
+                                        color: #333333;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                            .opacity-layout{
+                                position: relative;
+                                margin-top: -30px;
+                                height: 30px;
+                                width: 100%;
+                                text-align: center;
+                                background-image: linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,.9));
+                            }
+                        }
+                      }
+                      .all-features-button{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        z-index: 555;
+                        margin-left: 60px;
+                            a{
+                                border: 1px solid #f5f5f5;
+                                background-color: #f5f5f5;
+                                cursor: pointer;
+                                font-size: 13px;
+                                font-weight: 600;
+                                transition: all .3s ease;
+                                letter-spacing: 1.2px;
+                                color: #333;
+                                padding: 12px 64px;
+                                border-radius: 100px;
+                                display: flex;
+                                align-items: center;
+                                text-align: center;
+
+                                &:hover{
+                                    color: orangered;
+                                    background-color: #FDF4EC;
+                                }
+                                i{
+                                    margin-left: 10px;
+                                    margin-top: 2px;
+                                    font-size: 10px;
+                                    padding-left: 10px;
+                                }
+                            }
+                      }
+                      .all-features-button-line{
+                        width: 100%;
+                        height: 10px;
+                        border-top: 1px solid #e6e6e6;
+                      }
                     }
                 }
-        }
+            }
     }
 
 }
