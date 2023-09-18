@@ -88,7 +88,7 @@
   color: rgb(50, 50, 50);
 }
 .header-container .ecommerce-title .user-info a:hover {
-  transition: 500ms all;
+  transition: 300ms all;
   color: orangered;
 }
 .header-container .ecommerce-title .user-info a i {

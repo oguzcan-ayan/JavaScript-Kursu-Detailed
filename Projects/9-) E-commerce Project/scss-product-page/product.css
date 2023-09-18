@@ -117,7 +117,7 @@
   color: rgb(50, 50, 50);
 }
 .header-container .ecommerce-title .user-info a:hover {
-  transition: 500ms all;
+  transition: 300ms all;
   color: orangered;
 }
 .header-container .ecommerce-title .user-info a i {
@@ -698,6 +698,178 @@
   width: 100%;
   height: 10px;
   border-top: 1px solid #e6e6e6;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  margin: 4px 0 0 24px;
+  color: #333;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .institutional-bill {
+  margin-left: 25px;
+  margin-bottom: 16px;
+  background-color: #ebf5ff;
+  border-radius: 8px;
+  padding: 16px;
+  width: 195px;
+  height: 75px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .institutional-bill:first-child {
+  display: flex;
+  align-items: center;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .institutional-bill:first-child .institutional-bill-stamp {
+  display: inline-block;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: #1F6BC1;
+  border-radius: 4px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .institutional-bill:first-child .institutional-bill-stamp i {
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  color: rgb(255, 255, 255);
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .institutional-bill:first-child .institutional-bill-text {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  position: relative;
+  bottom: 10px;
+  left: 3px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .institutional-bill:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .institutional-bill:nth-child(1) .suitable-for-institutional-bill-text {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .institutional-bill:nth-child(1) .suitable-for-institutional-bill-text .examine-product {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 8px;
+  font-weight: 600;
+  position: relative;
+  margin-left: 1px;
+  color: #1F6BC1;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .institutional-bill:nth-child(1) .suitable-for-institutional-bill-text .examine-product i {
+  display: flex;
+  position: relative;
+  font-size: 10px;
+  left: 165px;
+  bottom: 13px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .seller-offer1 > div {
+  border-color: #f2e5da;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .seller-offer1 > div h2 {
+  font-size: 10px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #999;
+  letter-spacing: 0.65px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .seller-offer1 > div > div {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 8px 12px 8px 8px;
+  background-color: #fff;
+  color: #333;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .seller-offer1 > div > div:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.0784313725);
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .seller-offer1 > div > div a {
+  display: flex;
+  gap: 8px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .seller-offer1 > div > div a #box-seller-offer1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  padding: 9px;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  color: #666;
+  background-color: #f5f5f5;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .seller-offer1 > div > div a #box-greater-offer1 {
+  display: flex;
+  font-size: 10px;
+  margin: auto 0 auto auto;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .seller-offer1 > div > div a #box-greater-offer1:hover {
+  color: orangered;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .seller-offer1 > div > div a p {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  font-size: 11px;
+  width: 155px;
+  color: #333;
+  font-weight: 500;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .seller-offer2 {
+  margin-top: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 8px 12px 8px 8px;
+  background-color: #fff;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .seller-offer2 a {
+  display: flex;
+  gap: 8px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .seller-offer2 a #box-seller-offer2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f27a1a;
+  font-size: 14px;
+  padding: 9px;
+  background-color: #fef4eb;
+  height: 14px;
+  width: 14px;
+  border-radius: 4px;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .seller-offer2 a p {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  width: 155px;
+  gap: 2px;
+  justify-content: center;
+  color: #333;
+  font-weight: 500;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .seller-offer2 a #box-greater-offer2 {
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+  color: #333;
+  margin: auto 0 auto auto;
+}
+.product-detail-container .product-info-container .product-container .container-right-content .container-end-content .seller-offer2 a #box-greater-offer2:hover {
+  color: orangered;
 }
 
 .abc {
