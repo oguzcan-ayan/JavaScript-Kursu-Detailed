@@ -96,14 +96,21 @@ Object.entries(tt).map(el => console.log(el)) */
 
 divElementim.innerHTML += element; */
 
+
+
+let slideWidth = document.querySelectorAll(".start-slider-content > .slide");
+let oneElement = document.querySelector('.slide').clientWidth + 50 ;
+
 // slider 
 let count = 0;
 
+
 document.getElementById('next').addEventListener("click", () => {
-    count++;
-    const translateValue = count * 5;
-    document.getElementById('start-slider-content').style = `transform: translateX(${-translateValue}%);`
-    if(translateValue >= 110){
+    count += 3;
+    let translateValue = (oneElement*count);
+    console.log(translateValue)
+    document.getElementById('start-slider-content').style = `transform: translateX(${-translateValue}px);`
+    if(count >= slideWidth.length - 11){
         count = 0;
     }
 });
@@ -112,9 +119,9 @@ document.getElementById('prev').addEventListener("click", () => {
         document.getElementById('start-slider-content').style = ``
     }
     else {
-        count--;
-        const translateValue = count * -5;
-        document.getElementById('start-slider-content').style = `transform: translateX(${-translateValue}%);`
+        count -= 3;
+        let translateValue = (oneElement*count);
+        document.getElementById('start-slider-content').style = `transform: translateX(${-translateValue}px);`
     }
 
 });
