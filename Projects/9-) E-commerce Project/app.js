@@ -97,11 +97,9 @@ Object.entries(tt).map(el => console.log(el)) */
 divElementim.innerHTML += element; */
 
 
-
+// slider
 let slideWidth = document.querySelectorAll(".start-slider-content > .slide");
-let oneElement = document.querySelector('.slide').clientWidth + 50 ;
-
-// slider 
+let oneElement = document.querySelector('.slide').clientWidth + 50 ; 
 let count = 0;
 
 
@@ -141,3 +139,9 @@ productLink.addEventListener("click", e => {
      .catch(error => console.error("An error has occurred.", error));
 });
 
+//searchbox-click
+const searchbox = document.querySelector("");
+
+searchbox.addEventListener("click", e => {
+    searchbox.classList.add("boxColor");
+});

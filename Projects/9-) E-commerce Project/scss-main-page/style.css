@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   height: 130px;
+  background: #fff;
 }
 .header-container .ecommerce-title-top ul {
   display: flex;
@@ -28,6 +29,7 @@
 }
 .header-container .ecommerce-title-top ul li a:hover {
   color: rgb(100, 100, 100);
+  transition: all 200ms ease;
 }
 .header-container .ecommerce-title {
   display: flex;
@@ -48,14 +50,14 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .header-container .ecommerce-title .page-title a img {
-  width: 100px;
-  height: 70px;
+  width: 200px;
+  height: 85px;
 }
 .header-container .ecommerce-title .searchbox {
   display: flex;
   width: 700px;
   margin-top: 30px;
-  margin-left: 20px;
+  margin-left: -10px;
 }
 .header-container .ecommerce-title .searchbox input {
   position: relative;
@@ -75,6 +77,9 @@
   margin-left: 625px;
   margin-bottom: 30px;
   cursor: pointer;
+}
+.header-container .ecommerce-title #searchbox.boxColor {
+  border: 2px solid orangered;
 }
 .header-container .ecommerce-title .user-info {
   display: flex;
@@ -97,7 +102,18 @@
 }
 .header-container #title-scroll.active {
   position: fixed;
-  animation: all 5s ease-in-out;
+  border-bottom: 1px solid #ebebeb;
+  background: #fff;
+  animation: sticky-transition-show 0.3s forwards linear;
+  animation-name: sticky-transition-show;
+}
+@keyframes sticky-transition-show {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 .nav-products {
@@ -118,18 +134,32 @@
 }
 .nav-products .products ul li a {
   color: rgb(60, 60, 60);
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   margin-left: 15px;
   margin-right: 15px;
   letter-spacing: 0.2px;
 }
+.nav-products .products ul li a span {
+  display: inline-block;
+  text-indent: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #fff;
+  background: #dc2e2e;
+  border-radius: 32px;
+  margin-left: 3px;
+  width: 30px;
+  height: 15px;
+}
 .nav-products .products ul li a:hover {
   color: orangered;
-  transition: 200ms all;
+  transition: 100ms all;
   -webkit-text-decoration: 2px underline;
           text-decoration: 2px underline;
   text-decoration-color: orangered;
+  text-underline-offset: 12px;
 }
 
 .start-slider-content {
@@ -148,8 +178,8 @@
   row-gap: 15px;
 }
 .start-slider-content .slide .inner-content a img {
-  width: 60px;
-  height: 60px;
+  width: 68px;
+  height: 68px;
   transition: scale 0.5s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -161,9 +191,10 @@
 .start-slider-content .slide .inner-content span {
   text-align: center;
   color: rgb(50, 50, 50);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
-  white-space: nowrap;
+  width: 74px;
+  height: 42px;
 }
 .start-slider-content .slide .inner-content span:hover {
   transition: 300ms all;
@@ -224,7 +255,7 @@
   font-weight: 700;
   color: #168451;
   margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 45px;
 }
 .different-products .famous-products {
   display: flex;
@@ -239,7 +270,7 @@
   font-weight: 700;
   color: #B85106;
   margin-top: 20px;
-  margin-left: 80px;
+  margin-left: 100px;
 }
 .different-products .flash-products {
   display: flex;
@@ -254,7 +285,7 @@
   font-weight: 700;
   color: #C80849;
   margin-top: 20px;
-  margin-left: 130px;
+  margin-left: 150px;
 }
 
 .start-mega-september {
@@ -263,6 +294,10 @@
   margin-left: 50px;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+.start-mega-september div:hover {
+  transform: scale(1.01);
+  transition: 700ms all;
 }
 .start-mega-september div a {
   position: relative;

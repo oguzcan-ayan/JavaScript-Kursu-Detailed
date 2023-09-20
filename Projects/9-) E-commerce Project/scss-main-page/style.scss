@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     height: 130px;
+    background: #fff;
 
     .ecommerce-title-top{ 
     ul{
@@ -29,6 +30,7 @@
         color: rgb(150, 150, 150);
         &:hover{
             color: rgb(100, 100, 100);
+            transition: all 200ms ease;
         }
     }
 }
@@ -48,8 +50,8 @@
         font-weight: 500;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             img{
-                width: 100px;
-                height: 70px;
+                width: 200px;
+                height: 85px;
             }
     }
     }
@@ -57,7 +59,7 @@
         display: flex;
         width: 700px;
         margin-top: 30px;
-        margin-left: 20px;
+        margin-left: -10px;
         input{
           position: relative;  
           text-indent: 15px;   
@@ -78,6 +80,10 @@
             margin-bottom: 30px;
             cursor: pointer;
             }
+        }
+
+        #searchbox.boxColor{
+            border: 2px solid orangered;
         }
         
         .user-info{
@@ -108,7 +114,18 @@
     }
     #title-scroll.active{
         position: fixed;
-        animation: all 5s ease-in-out;
+        border-bottom: 1px solid #ebebeb;
+        background: #fff;
+        animation: sticky-transition-show .3s forwards linear;
+        animation-name: sticky-transition-show;
+        @keyframes sticky-transition-show {
+            0%{
+                transform: translateY(-100%);
+            }
+            100%{
+                transform: translateY(0%);
+            }
+        }
     }  
 }
 .nav-products{
@@ -126,19 +143,34 @@
             justify-content: space-evenly;
 
         li{
+            
            a{
             color: rgb(60, 60, 60);
-            font-size: 15px;
+            font-size: 13px;
             font-weight: 600;
             margin-left: 15px;
             margin-right: 15px;
             letter-spacing: 0.2px;
+
+            span{
+                display: inline-block;
+                text-indent: 3px;
+                font-size: 11px;
+                font-weight: 600;
+                white-space: nowrap;
+                color: #fff;
+                background: #dc2e2e;
+                border-radius: 32px;
+                margin-left: 3px;
+                width: 30px;
+                height: 15px;
+            }
             &:hover{
                 color: orangered;
-                transition: 200ms all;
+                transition: 100ms all;
                 text-decoration: 2px underline;
                 text-decoration-color: orangered;
-                
+                text-underline-offset: 12px;
             }
            } 
         }    
@@ -162,8 +194,8 @@
             align-items: center;
             row-gap: 15px;
         a img{
-            width: 60px;
-            height: 60px;
+            width: 68px;
+            height: 68px;
             transition: scale .5s ease-in-out;
             transition: all .2s ease-in-out;
             
@@ -176,16 +208,17 @@
         span{
             text-align: center;
             color: rgb(50, 50, 50);
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 700;
-            white-space: nowrap;
-          
+            width: 74px;
+            height: 42px;
+
             &:hover{
                 transition: 300ms all;
                 color: orangered;
                 cursor: pointer;
                 
-            }
+              }
             }    
         }
     } 
@@ -194,12 +227,12 @@
 
 .indicators{
     position: relative;
-
+    
     button{
         position: absolute;
         background: none;
         border: none;
-        
+
     }
 
     .prev{
@@ -207,7 +240,7 @@
         top: -75px;
         opacity: 0.5;
         cursor: pointer;
-
+            
         &:hover{
             transition: all 1s;
             color: black;
@@ -250,7 +283,7 @@
             font-weight: 700;
             color: #168451;
             margin-top: 20px;
-            margin-left: 40px;
+            margin-left: 45px;
         }
     }
     .famous-products{
@@ -265,7 +298,7 @@
             font-weight: 700;
             color: #B85106;
             margin-top: 20px;
-            margin-left: 80px;
+            margin-left: 100px;
         }
     }
     .flash-products{
@@ -280,7 +313,7 @@
             font-weight: 700;
             color: #C80849;
             margin-top: 20px;
-            margin-left: 130px;
+            margin-left: 150px;
         }
     }
 }
@@ -292,7 +325,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     div{
-        
+        &:hover{
+            transform: scale(1.01);
+            transition: 700ms all;
+        }
+
      a {
       position: relative;
 
