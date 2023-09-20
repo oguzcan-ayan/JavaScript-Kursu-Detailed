@@ -60,23 +60,36 @@
         width: 700px;
         margin-top: 30px;
         margin-left: -10px;
+        border: none;
+        #searchbox{
+            border: none;
+            border-radius: 5px;
+            width: 592px;
+            height: 50px;
+            margin-left: 60px;
+            position: relative;
+           
         input{
-          position: relative;  
+          position: absolute;  
           text-indent: 15px;   
-          margin-left: 60px;
-          width: 600px;
+          margin-left: -288px;
+          margin-top: -22px;
+          width: 538px;
           height: 45px;
           font-size: 15px;
           border-radius: 5px;
           border: none;
           background-color: rgb(240, 240, 240);
-        
+            &:focus{
+                outline: none;
+            }
+      }
     }
         i{
             color: orangered;
             position: absolute;
-            margin-top: 12px;
-            margin-left: 625px;
+            margin-top: 15px;
+            margin-left: 612px;
             margin-bottom: 30px;
             cursor: pointer;
             }
@@ -84,6 +97,8 @@
 
         #searchbox.boxColor{
             border: 2px solid orangered;
+            transition: all 400ms ease;
+            box-shadow: 1px 1px 1px 5px rgba(200, 200, 200, 0.2);
         }
         
         .user-info{
@@ -225,7 +240,7 @@
 
 }
 
-.indicators{
+.indicators-start{
     position: relative;
     
     button{
@@ -235,7 +250,7 @@
 
     }
 
-    .prev{
+    .prev-start{
         margin-left: 10px;
         top: -75px;
         opacity: 0.5;
@@ -248,7 +263,7 @@
         }
     }
 
-    .next{
+    .next-start{
         top: -75px;
         left: 1320px;
         opacity: 0.5;
@@ -361,8 +376,12 @@
             background-color: #F68428;
             
         }
-      }
 
+        .start-shopping{
+            font-size: 12px;
+            margin-left: 260px;
+          }
+      }
     }
   }
 }
@@ -373,7 +392,10 @@
     background-color:#FFFAF6;
     border-radius: 7px;
     height: 400px;
-    
+    &:hover{
+        transition: transform 500ms ease;
+        transform: scale(1.01);
+    }
     .content-header{
         display: flex;
         height: 50px;
@@ -393,6 +415,7 @@
             width: auto;
             margin-left: 20px;
             height: 350px;
+
             .slider-products{ 
             width: 250px;
             height: 330px;
@@ -535,8 +558,10 @@
                     padding: 10px;
                     height: 135px;
                     .brand-product{
-                       height: 35px;
-
+                       height: 60px;
+                       position: relative;
+                       top: 256px;
+                       right: 188px;
                         .brand{
                             margin-right: 4px;
                             font-size: 15px;
@@ -544,14 +569,79 @@
                             font-weight: bold;
                         }
                         .name{
+                            display: inline-block;
                             white-space: normal;
                             overflow: hidden;
                             color: #666;
-                            font-size: 15px;
+                            font-size: 13px;
+                            height: 35px;
+                            width: 170px;
+                        }
+                    }
+                    .price{
+                        position: relative;
+                        top: 216px;
+                        right: 20px;
+
+                        span{
+                            position: relative;
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: #f27a1a;
                         }
                     }
 
+                    .discount-stamp{
+                        width: 80px;
+                        height: 20px;
+                        position: relative;
+                        top: 130px;
+                        right: 36px;
+                        background-color: #FFF6EE;
+                        i{
+                            display: flex;
+                            font-size: 14px;
+                            width: 14px;
+                            height: 14px;
+                            color: #f27a1a;
+                        }
 
+                        span{
+                            display: flex;
+                            position: relative;
+                            white-space: nowrap;
+                            left: 15px;
+                            bottom: 15px;
+                            color: #1b1b1b;
+                            font-size: 10px;
+                        }
+                    }
+
+                    .coupon-opportunity{
+                        width: 80px;
+                        height: 20px;
+                        position: relative;
+                        right: 35px;
+                        top: 80px;
+                        background-color: #FFF6EE;
+                        i{
+                            display: flex;
+                            font-size: 14px;
+                            width: 14px;
+                            height: 14px;
+                            color: #f27a1a;
+                        }
+
+                        span{
+                            display: flex;
+                            position: relative;
+                            white-space: nowrap;
+                            left: 15px;
+                            bottom: 15px;
+                            font-size: 10px;
+                            color: #1b1b1b;
+                        }
+                    }
                 }
 
                 }
@@ -559,7 +649,42 @@
           } 
         }
     }
-
+    .indicators-middle{
+        position: relative;
+        
+        button{
+            position: absolute;
+            background: none;
+            border: none;
+    
+        }
+    
+        .prev-middle{
+            margin-left: 55px;
+            top: -208px;
+            opacity: 0.5;
+            cursor: pointer;
+                
+            &:hover{
+                transition: all 1s;
+                color: black;
+                opacity: 1;
+            }
+        }
+    
+        .next-middle{
+            top: -216px;
+            left: 1323px;
+            opacity: 0.5;
+            cursor: pointer;
+    
+            &:hover{
+                transition: all 1s;
+                color: black;
+                opacity: 1;
+            }
+        }
+    }
 
     .middle-mega-september{
         display: grid;
@@ -567,8 +692,11 @@
         margin-left: 50px;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        div{
-            
+        div{ 
+            &:hover{
+                transform: scale(1.01);
+                transition: 700ms all;
+            }
          a {
           position: relative;
     
@@ -599,6 +727,10 @@
                 transition: background-color 300ms;
                 background-color: #F68428;
                 
+            }
+            .start-shopping{
+                font-size: 12px;
+                margin-left: 260px;
             }
           }
     
@@ -862,15 +994,18 @@
 
                     .trendyol-info a{
                         color: white;
-                        font-size: 13px; 
-                       
+                        font-size: 13px;
+                        
                         h4{
                         color: white;
                         font-size: 22px;
                         padding-bottom: 5px;
                         font-weight: 400;
                         margin-bottom: 10px;
-
+                        &:hover{
+                            
+                            text-decoration: 2px solid white underline;
+                        }
                     }   
                 }
                     .trendyol-info ul{
@@ -879,7 +1014,10 @@
                             margin: 17px 0 0 0;
                             a{
                                 font-size: 13px;
-                                     
+                                &:hover{
+                            
+                                    text-decoration: 1px solid white underline;
+                                }       
                             }
                         }
                     }    
@@ -945,6 +1083,10 @@
                                 font-size: 22px;
                                 padding-bottom: 5px;
                                 margin: 0 0 17px 0;
+                                &:hover{
+
+                                    text-decoration: 2px solid white underline;
+                                }
                                 }
                             }
 
@@ -953,10 +1095,15 @@
                                 a{
                                     font-size: 13px;
                                     color: #fff;
+                                    &:hover{
+                            
+                                        text-decoration: 1px solid white underline;
+                                    }
                                 }
                             }
                         }
                         .download-stores{ 
+                            
                             margin-bottom: 135px;
                            ul li {
                                 margin: 17px 0 0 0;
@@ -965,6 +1112,7 @@
                                     font-weight: 600;
                                     font-size: 16px;
                                     padding-bottom: 7px;
+                                    margin-top: 25px;
                                 }
 
                                 .mobile-apps{
@@ -1003,6 +1151,10 @@
                                     padding-bottom: 5px;
                                     margin: 0 0 17px 0;
                                     font-weight: 400;
+                                    &:hover{
+                            
+                                        text-decoration: 2px solid white underline;
+                                    }
                                 }
                             }
                             ul li{
@@ -1011,6 +1163,10 @@
                                 a{
                                     font-size: 13px;
                                     color: #fff;
+                                    &:hover{
+                            
+                                        text-decoration: 1px solid white underline;
+                                    }
                                 }
                             }
                         }
@@ -1023,6 +1179,7 @@
                                 .social-media{
                                     font-size: 16px;
                                     font-weight: 600;
+                                    margin-top: 20px;
                                 }
                                 .media-tags{
                                     height: 100px;
@@ -1082,12 +1239,20 @@
                                 margin: 0 0 17px 0;
                                 font-weight: 400;
                                 color: white;
+                                &:hover{
+                            
+                                    text-decoration: 2px solid white underline;
+                                }
                             }
                             ul li{
                                 margin: 0 0 20px 0;
                                 a{
                                     font-size: 13px;
                                     color: white;
+                                    &:hover{
+                            
+                                        text-decoration: 1px solid white underline;
+                                    }
                                 }
                                 
                             }
@@ -1099,6 +1264,7 @@
                                 margin: 7px 0 0 0;
                                 .change-country{
                                     position: relative;
+                                    margin-top: 10px;
                                     bottom: 16px;
                                     width: 110px;
                                     height: 25px;
@@ -1179,6 +1345,7 @@
         }
     }
         .scroll-to-up{
+
             .up-button{
                 background-color: #fff;
                 border: 1px solid #dcdcdc;
@@ -1194,6 +1361,14 @@
                 right: 20px;
                 will-change: scroll-position;
                 backface-visibility: hidden;
+                &:hover{
+                    color: #f27a1a;
+                    border: 1px solid orangered;
+                    background-position: 0 -18px;
+                    transition-duration: .4s;
+                    transition-property: all;
+                    transition-timing-function: ease-in-out;
+                }    
                 i{
                     float: left;
                     height: 20px;
@@ -1201,6 +1376,7 @@
                     overflow: hidden;
                     opacity: 0.5;
                     margin: 10px 0 0 7px;
+
                 }
 
                 span{
@@ -1210,7 +1386,12 @@
                     font-weight: 600;
                     margin-left: 7px;
                     text-align: center;
-                
+                    &:hover{
+                        color: #f27a1a;
+                        transition-duration: 0.4s;
+                        transition-property: all;
+                        transition-timing-function: linear;
+                    }
                 }
             }
         }

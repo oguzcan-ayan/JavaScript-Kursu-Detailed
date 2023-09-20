@@ -35,7 +35,9 @@
             </a>
         </div>
         <div class="searchbox">
-            <input type="search" title="search" id="searchbox" placeholder="Aradığınız ürün, kategori veya markayı yazınız.">
+            <button id="searchbox">
+                <input type="search" title="search" placeholder="Aradığınız ürün, kategori veya markayı yazınız.">
+            </button>
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
 
@@ -251,9 +253,9 @@
 
         </div>
 
-        <div class="indicators">
-            <button id="prev" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-            <button id="next" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <div class="indicators-start">
+            <button id="prev-start" class="prev-start"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+            <button id="next-start" class="next-start"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
         </div>
 
     </section>
@@ -277,38 +279,37 @@
             <div>
                 <a href="#">
                     <img src="Images/mobile_20230912082538_FotografliYorumlarErkekGiyim2326812mobile.webp" alt="content not found">
-                    <span class="images">Fotoğraflı Yorumlar - Erkek Giyim</span>
-                    <span class="go-shopping">Alışverişe Başla</span>
+                    <span class="images">Fotoğraflı Yorumlar - Erkek Giyim <span class="start-shopping">Alışverişe Başla > </span></span>
                 </a>
             </div>
             <div>
                 <a href="#">
                     <img src="Images/mobile_20230912081700_AkilliCepTelefonlariMegaEylul2331729mobile.webp" alt="content not found">
-                    <span>Akıllı Cep Telefonları - Mega Eylül</span>
+                    <span>Akıllı Cep Telefonları - Mega Eylül <span class="start-shopping">Alışverişe Başla > </span>
                 </a>
             </div>
             <div>
                 <a href="#">
                     <img src="Images/7e3f39987e_2.webp" alt="content not found">
-                    <span>Koton</span>
+                    <span>Koton <span class="start-shopping">Alışverişe Başla > </span>
                 </a>
             </div>
             <div>
                 <a href="#">
                     <img src="Images/3cb84bf0f8_2.webp" alt="content not found">
-                    <span>Madame Coco</span>
+                    <span>Madame Coco <span class="start-shopping">Alışverişe Başla > </span>
                 </a>
             </div>
             <div>
                 <a href="#">
                     <img src="Images/587c013df1_2.webp" alt="content not found">
-                    <span>Seçili Vorcom Tabletlerde Mega Eylül Fırsatları</span>
+                    <span>Seçili Vorcom Tabletlerde Mega Eylül Fırsatları <span class="start-shopping">Alışverişe Başla > </span>
                 </a>
             </div>
             <div>
                 <a href="#">
                     <img src="Images/mobile_20230912082300_LufianMegaEylul2331900mobile.webp" alt="content not found">
-                    <span>Lufian - Mega Eylül</span>
+                    <span>Lufian - Mega Eylül <span class="start-shopping">Alışverişe Başla > </span>
                 </a>
             </div>
             
@@ -316,13 +317,13 @@
 
     </section>
 
-    <section style="width: 100%;">
+    <section style="width: 100%; overflow: hidden;">
 
         <div class="middle1-slider-content">
             <div class="content-header">
                 <span>Çok Satan Ürünler</span>
             </div>
-            <div class="middle-slider-content">
+            <div class="middle-slider-content" id="middle-slider-content">
                 <div class="slider-products">
                 <a href="product.html" id="product-link" target="_blank">
                 
@@ -360,15 +361,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
 
@@ -414,15 +419,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
                  
@@ -465,15 +474,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
                    
@@ -516,15 +529,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
                     
@@ -567,15 +584,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
                   
@@ -619,15 +640,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
             
@@ -670,15 +695,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
 
@@ -721,15 +750,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
 
@@ -772,15 +805,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
 
@@ -823,15 +860,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
 
@@ -874,15 +915,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
 
@@ -925,15 +970,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
 
@@ -976,15 +1025,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
 
@@ -1027,15 +1080,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
         
@@ -1078,15 +1135,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
 
@@ -1129,15 +1190,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
 
@@ -1179,15 +1244,19 @@
                     </div>
                     <div class="description">
                         <div class="brand-product">
-                            <span class="brand"></span>
-                            <span class="name"></span>
+                            <span class="brand">Bargello</span>
+                            <span class="name">ERKEK PARFÜM 561 FRESH 50 ML EDP</span>
                         </div>
                         <div class="price">
                             <span>230TL</span>
                         </div>
                         <div class="discount-stamp">
-                            <img src="" alt="">
-                            <span class="promotion-text"></span>
+                            <i class="fa-solid fa-tag"></i>
+                            <span class="promotion-text">Çok Al Az Öde</span>
+                        </div>
+                        <div class="coupon-opportunity">
+                            <i class="fa-solid fa-flag"></i>
+                            <span class="coupon-text">Kupon Fırsatı</span>
                         </div>
                     </div>
 
@@ -1196,7 +1265,10 @@
             </div>
         </div>
     </div>
-
+    <div class="indicators-middle">
+        <button id="prev-middle" class="prev-middle"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+        <button id="next-middle" class="next-middle"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+    </div>
     </section>
 
 <section>
@@ -1205,199 +1277,199 @@
         <div>
             <a href="#">
                 <img src="Images/airfryer.webp" alt="content not found">
-                <span>Fritözler - Mega Eylül</span>
+                <span>Fritözler - Mega Eylül <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/akıllı saat.webp" alt="content not found">
-                <span>Akıllı Saatler</span>
+                <span>Akıllı Saatler <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/askılık.webp" alt="content not found">
-                <span>Ev Gereçlerinde Yıldızlı Ürünler</span>
+                <span>Ev Gereçlerinde Yıldızlı Ürünler <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/banyo.webp" alt="content not found">
-                <span>Banyonuz için Herşey</span>
+                <span>Banyonuz için Herşey <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/bad bear mont.webp" alt="content not found">
-                <span>Bad Bear</span>
+                <span>Bad Bear <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/bilgisayar.webp" alt="content not found">
-                <span>Mega Eylül Bilgisayarlar- Yıldızlı Ürünler</span>
+                <span>Mega Eylül Bilgisayarlar- Yıldızlı Ürünler <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/3cb84bf0f8_2.webp" alt="content not found">
-                <span>Madame Coco</span>
+                <span>Madame Coco <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/cep telefonu.webp" alt="content not found">
-                <span>Akıllı Cep Telefonları - Mega Eylül</span>
+                <span>Akıllı Cep Telefonları - Mega Eylül <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/crocs birkenstock.webp" alt="content not found">
-                <span>Crocs & Birkenstock</span>
+                <span>Crocs & Birkenstock <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/çanta.webp" alt="content not found">
-                <span>Trend Marka ve Kategoriler</span>
+                <span>Trend Marka ve Kategoriler <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/elbise.webp" alt="content not found">
-                <span>WWF</span>
+                <span>WWF <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/elektrikli ev aletleri.webp" alt="content not found">
-                <span>Elektrikli El Aletleri</span>
+                <span>Elektrikli El Aletleri <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/erkek giyimde bahar.webp" alt="content not found">
-                <span>Erkek Giyimde Mega Eylül Fırsatları</span>
+                <span>Erkek Giyimde Mega Eylül Fırsatları <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/gümüş takı.webp" alt="content not found">
-                <span>Gümüş Takı Şıklığı</span>
+                <span>Gümüş Takı Şıklığı <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/güneş gözlüğü.webp" alt="content not found">
-                <span>Saat & Gözlükte Kuponlu Ürünler</span>
+                <span>Saat & Gözlükte Kuponlu Ürünler <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/hatemoğlu kazak.webp" alt="content not found">
-                <span>Hatemoğlu - Yeni Sezon</span>
+                <span>Hatemoğlu - Yeni Sezon <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/hoparlör.webp" alt="content not found">
-                <span>Hoparlörler - Yıldızlı Ürünler</span>
+                <span>Hoparlörler - Yıldızlı Ürünler <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/ıslak mendil.webp" alt="content not found">
-                <span>Süpermarkette Yüksek Puanlı Ürünler</span>
+                <span>Süpermarkette Yüksek Puanlı Ürünler <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/JackJones_boxer.webp" alt="content not found">
-                <span>Jack & Jones - Levi's</span>
+                <span>Jack & Jones - Levi's <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/kahve.webp" alt="content not found">
-                <span>Kahve Dünyası</span>
+                <span>Kahve Dünyası <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/klavye.webp" alt="content not found">
-                <span>Oyuncu Donanımları - Yıldızlı Ürünler</span>
+                <span>Oyuncu Donanımları - Yıldızlı Ürünler <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/mobilya dolabı.webp" alt="content not found">
-                <span>Mobilyanın Vazgeçilmezleri</span>
+                <span>Mobilyanın Vazgeçilmezleri <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/new balance ayakkabı.webp" alt="content not found">
-                <span>New Balance</span>
+                <span>New Balance <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/parfüm slazenger.webp" alt="content not found">
-                <span>Slazenger</span>
+                <span>Slazenger <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/protein tozu.webp" alt="content not found">
-                <span>Proteinocean Markasında 2. Ürüne %15 İndirim</span>
+                <span>Proteinocean Markasında 2. Ürüne %15 İndirim <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/rooter.webp" alt="content not found">
-                <span>Ağ - Modem Ürünlerini Keşfet</span>
+                <span>Ağ - Modem Ürünlerini Keşfet <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/siyah sneaker zamanı.webp" alt="content not found">
-                <span>Siyah Sneaker Zamanı</span>
+                <span>Siyah Sneaker Zamanı <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/sofra bezi.webp" alt="content not found">
-                <span>Sofra & Mutfakta Yıldızlı Ürünler</span>
+                <span>Sofra & Mutfakta Yıldızlı Ürünler <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/sweatshirt mevsimi.webp" alt="content not found">
-                <span>Sweatshirt Mevsimini Kaçırma</span>
+                <span>Sweatshirt Mevsimini Kaçırma <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/tarzına uyacak ürünler.webp" alt="content not found">
-                <span>Fotoğraflı Yorumlar - Erkek Giyim</span>
+                <span>Fotoğraflı Yorumlar - Erkek Giyim <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/traş makinesi.webp" alt="content not found">
-                <span>Philips Kişisel Bakım Aletleri - Mega Eylül</span>
+                <span>Philips Kişisel Bakım Aletleri - Mega Eylül <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/yatak örtüsü.webp" alt="content not found">
-                <span>Karaca & Emsan & Karaca Home</span>
+                <span>Karaca & Emsan & Karaca Home <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
         <div>
             <a href="#">
                 <img src="Images/mobile_20230912082300_LufianMegaEylul2331900mobile.webp" alt="content not found">
-                <span>Lufian - Mega Eylül</span>
+                <span>Lufian - Mega Eylül <span class="start-shopping">Alışverişe Başla > </span>
             </a>
         </div>
 
@@ -1932,9 +2004,9 @@
                                     <li><p>Mobil Uygulamalar</p></li>
                                     <li>
                                         <div class="mobile-apps">
-                                            <a href="#"><img src="Images/app store.png" alt="content not found"></a>
-                                            <a href="#" class="google-play-store"><img src="Images/en_badge_web_generic.png" alt="content not found"></a>
-                                            <a href="#"><img src="Images/huawei.jpg" alt="content not found"></a>
+                                            <a href="https://apps.apple.com/tr/app/trendyol-com/id524362642" target="_blank"><img src="Images/app store.png" alt="content not found"></a>
+                                            <a href="https://play.google.com/store/apps/details?id=trendyol.com&feature=search_result#?t=W251bGwsMSwyLDEsInRyZW5keW9sLmNvbSJd" target="_blank" class="google-play-store"><img src="Images/en_badge_web_generic.png" alt="content not found"></a>
+                                            <a href="https://appgallery.huawei.com/app/C101645013?sharePrepath=ag&source=appshare&subsource=C101645013" target="_blank"><img src="Images/huawei.jpg" alt="content not found"></a>
                                         </div>
                                     </li>
                                 </ul>
@@ -1957,10 +2029,10 @@
                             <li><p class="social-media">Sosyal Medya</p></li>
                             <li>
                                 <div class="media-tags">
-                                    <a href="#" class="facebook-logo"><i class="fa-brands fa-facebook-f"></i></a>
-                                    <a href="#" class="instagram-logo"><i class="fa-brands fa-square-instagram"></i></a>
-                                    <a href="#" class="twitter-logo"><i class="fa-brands fa-twitter"></i></a>
-                                    <a href="#" class="youtube-logo"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="https://www.facebook.com/Trendyol" target="_blank" class="facebook-logo"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://www.instagram.com/trendyolcom/" target="_blank" class="instagram-logo"><i class="fa-brands fa-square-instagram"></i></a>
+                                    <a href="https://twitter.com/trendyol" target="_blank" class="twitter-logo"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://www.youtube.com/trendyol" target="_blank" class="youtube-logo"><i class="fa-brands fa-youtube"></i></a>
                                 </div>
                             </li>
                         </ul>
@@ -1983,10 +2055,10 @@
                             <li>
                                 <div class="security-stamps">
                                     <div class="etbis">
-                                        <a href="#" class="etbis-logo"><img src="Images/etbis-qr.webp" alt="content not found"></a>
+                                        <a href="https://www.eticaret.gov.tr/siteprofil/305B30787EA6409BBF6EFBEA3D437B96/wwwtrendyolcom" class="etbis-logo" target="_blank"><img src="Images/etbis-qr.webp" alt="content not found"></a>
                                     </div>
                                     <div class="tr-go">
-                                        <a href="#" class="tr-go-logo"><img src="Images/guven-damgasi-logo.jpg" alt="content not found"></a>
+                                        <a href="https://www.guvendamgasi.org.tr/firmadetay.php?Guid=8e69c8c5-2f03-11ea-8718-48df373f4850" target="_blank" class="tr-go-logo"><img src="Images/guven-damgasi-logo.jpg" alt="content not found"></a>
                                     </div>              
                                 </div>
                             </li>
@@ -2024,7 +2096,7 @@
     
     
     <div id="scroll-to-up" class="scroll-to-up" title="Yukarı Çık">
-        <button class="up-button">
+        <button class="up-button" id="up-button">
             <i class="fa-solid fa-arrow-up"></i>
             <span>Yukarı Çık</span>
         </button>

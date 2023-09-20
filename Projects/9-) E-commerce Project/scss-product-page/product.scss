@@ -80,8 +80,8 @@
         font-weight: 500;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             img{
-                width: 100px;
-                height: 70px;
+                width: 200px;
+                height: 85px;
             }
     }
     }
@@ -89,29 +89,47 @@
         display: flex;
         width: 700px;
         margin-top: 30px;
-        margin-left: 20px;
+        margin-left: -10px;
+        border: none;
+        #searchbox{
+            border: none;
+            border-radius: 5px;
+            width: 592px;
+            height: 50px;
+            margin-left: 60px;
+            position: relative;
         input{
-          position: relative;  
+          position: absolute;  
           text-indent: 15px;   
-          margin-left: 60px;
-          width: 600px;
+          margin-left: -288px;
+          margin-top: -22px;
+          width: 538px;
           height: 45px;
           font-size: 15px;
           border-radius: 5px;
           border: none;
           background-color: rgb(240, 240, 240);
-        
+          &:focus{
+            outline: none;
+        }
     }
+  }
+
         i{
             color: orangered;
             position: absolute;
-            margin-top: 12px;
-            margin-left: 625px;
+            margin-top: 15px;
+            margin-left: 612px;
             margin-bottom: 30px;
             cursor: pointer;
             }
-        }
         
+    }
+    #searchbox.boxColor{
+        border: 2px solid orangered;
+        transition: all 400ms ease;
+        box-shadow: 1px 1px 1px 5px rgba(200, 200, 200, 0.2);
+    }
         .user-info{
             display: flex;
             align-items: center;
@@ -249,6 +267,12 @@
                             position: absolute;
                             width: 125px;
                             bottom: 5px;
+                            left: 5px;
+                        }
+                        .most-selling{
+                            position: absolute;
+                            width: 125px;
+                            bottom: 395px;
                             left: 5px;
                         }
                         
@@ -772,7 +796,6 @@
                         margin: 4px 0 0 24px;
                         color: #333;
                         .institutional-bill{
-                            margin-left: 25px;
                             margin-bottom: 16px;
                             background-color: #ebf5ff;
                             border-radius: 8px;
@@ -1277,6 +1300,7 @@
                                     #ribbon-collection{
                                         vertical-align: middle;
                                         border: 0;
+                                        color: #F27A1A;
                                     }
 
                                     span{
@@ -1338,3 +1362,4 @@
             }
         }
     }
+    

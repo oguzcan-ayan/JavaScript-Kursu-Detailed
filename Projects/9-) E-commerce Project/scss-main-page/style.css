@@ -58,28 +58,43 @@
   width: 700px;
   margin-top: 30px;
   margin-left: -10px;
+  border: none;
 }
-.header-container .ecommerce-title .searchbox input {
-  position: relative;
-  text-indent: 15px;
+.header-container .ecommerce-title .searchbox #searchbox {
+  border: none;
+  border-radius: 5px;
+  width: 592px;
+  height: 50px;
   margin-left: 60px;
-  width: 600px;
+  position: relative;
+}
+.header-container .ecommerce-title .searchbox #searchbox input {
+  position: absolute;
+  text-indent: 15px;
+  margin-left: -288px;
+  margin-top: -22px;
+  width: 538px;
   height: 45px;
   font-size: 15px;
   border-radius: 5px;
   border: none;
   background-color: rgb(240, 240, 240);
 }
+.header-container .ecommerce-title .searchbox #searchbox input:focus {
+  outline: none;
+}
 .header-container .ecommerce-title .searchbox i {
   color: orangered;
   position: absolute;
-  margin-top: 12px;
-  margin-left: 625px;
+  margin-top: 15px;
+  margin-left: 612px;
   margin-bottom: 30px;
   cursor: pointer;
 }
 .header-container .ecommerce-title #searchbox.boxColor {
   border: 2px solid orangered;
+  transition: all 400ms ease;
+  box-shadow: 1px 1px 1px 5px rgba(200, 200, 200, 0.2);
 }
 .header-container .ecommerce-title .user-info {
   display: flex;
@@ -202,32 +217,32 @@
   cursor: pointer;
 }
 
-.indicators {
+.indicators-start {
   position: relative;
 }
-.indicators button {
+.indicators-start button {
   position: absolute;
   background: none;
   border: none;
 }
-.indicators .prev {
+.indicators-start .prev-start {
   margin-left: 10px;
   top: -75px;
   opacity: 0.5;
   cursor: pointer;
 }
-.indicators .prev:hover {
+.indicators-start .prev-start:hover {
   transition: all 1s;
   color: black;
   opacity: 1;
 }
-.indicators .next {
+.indicators-start .next-start {
   top: -75px;
   left: 1320px;
   opacity: 0.5;
   cursor: pointer;
 }
-.indicators .next:hover {
+.indicators-start .next-start:hover {
   transition: all 1s;
   color: black;
   opacity: 1;
@@ -328,6 +343,10 @@
   transition: background-color 300ms;
   background-color: #F68428;
 }
+.start-mega-september div a span .start-shopping {
+  font-size: 12px;
+  margin-left: 260px;
+}
 
 .middle1-slider-content {
   margin-top: 20px;
@@ -336,6 +355,10 @@
   background-color: #FFFAF6;
   border-radius: 7px;
   height: 400px;
+}
+.middle1-slider-content:hover {
+  transition: transform 500ms ease;
+  transform: scale(1.01);
 }
 .middle1-slider-content .content-header {
   display: flex;
@@ -490,7 +513,10 @@
   height: 135px;
 }
 .middle1-slider-content .middle-slider-content .slider-products a .image-container .description .brand-product {
-  height: 35px;
+  height: 60px;
+  position: relative;
+  top: 256px;
+  right: 188px;
 }
 .middle1-slider-content .middle-slider-content .slider-products a .image-container .description .brand-product .brand {
   margin-right: 4px;
@@ -499,10 +525,103 @@
   font-weight: bold;
 }
 .middle1-slider-content .middle-slider-content .slider-products a .image-container .description .brand-product .name {
+  display: inline-block;
   white-space: normal;
   overflow: hidden;
   color: #666;
-  font-size: 15px;
+  font-size: 13px;
+  height: 35px;
+  width: 170px;
+}
+.middle1-slider-content .middle-slider-content .slider-products a .image-container .description .price {
+  position: relative;
+  top: 216px;
+  right: 20px;
+}
+.middle1-slider-content .middle-slider-content .slider-products a .image-container .description .price span {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f27a1a;
+}
+.middle1-slider-content .middle-slider-content .slider-products a .image-container .description .discount-stamp {
+  width: 80px;
+  height: 20px;
+  position: relative;
+  top: 130px;
+  right: 36px;
+  background-color: #FFF6EE;
+}
+.middle1-slider-content .middle-slider-content .slider-products a .image-container .description .discount-stamp i {
+  display: flex;
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
+  color: #f27a1a;
+}
+.middle1-slider-content .middle-slider-content .slider-products a .image-container .description .discount-stamp span {
+  display: flex;
+  position: relative;
+  white-space: nowrap;
+  left: 15px;
+  bottom: 15px;
+  color: #1b1b1b;
+  font-size: 10px;
+}
+.middle1-slider-content .middle-slider-content .slider-products a .image-container .description .coupon-opportunity {
+  width: 80px;
+  height: 20px;
+  position: relative;
+  right: 35px;
+  top: 80px;
+  background-color: #FFF6EE;
+}
+.middle1-slider-content .middle-slider-content .slider-products a .image-container .description .coupon-opportunity i {
+  display: flex;
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
+  color: #f27a1a;
+}
+.middle1-slider-content .middle-slider-content .slider-products a .image-container .description .coupon-opportunity span {
+  display: flex;
+  position: relative;
+  white-space: nowrap;
+  left: 15px;
+  bottom: 15px;
+  font-size: 10px;
+  color: #1b1b1b;
+}
+
+.indicators-middle {
+  position: relative;
+}
+.indicators-middle button {
+  position: absolute;
+  background: none;
+  border: none;
+}
+.indicators-middle .prev-middle {
+  margin-left: 55px;
+  top: -208px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.indicators-middle .prev-middle:hover {
+  transition: all 1s;
+  color: black;
+  opacity: 1;
+}
+.indicators-middle .next-middle {
+  top: -216px;
+  left: 1323px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.indicators-middle .next-middle:hover {
+  transition: all 1s;
+  color: black;
+  opacity: 1;
 }
 
 .middle-mega-september {
@@ -511,6 +630,10 @@
   margin-left: 50px;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+.middle-mega-september div:hover {
+  transform: scale(1.01);
+  transition: 700ms all;
 }
 .middle-mega-september div a {
   position: relative;
@@ -540,6 +663,10 @@
 .middle-mega-september div a span:hover {
   transition: background-color 300ms;
   background-color: #F68428;
+}
+.middle-mega-september div a span .start-shopping {
+  font-size: 12px;
+  margin-left: 260px;
 }
 
 .ecommerce-sub-content {
@@ -754,11 +881,19 @@
   font-weight: 400;
   margin-bottom: 10px;
 }
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .trendyol-info a h4:hover {
+  -webkit-text-decoration: 2px solid white underline;
+          text-decoration: 2px solid white underline;
+}
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .trendyol-info ul li {
   margin: 17px 0 0 0;
 }
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .trendyol-info ul li a {
   font-size: 13px;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .trendyol-info ul li a:hover {
+  -webkit-text-decoration: 1px solid white underline;
+          text-decoration: 1px solid white underline;
 }
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .companies-cards {
   margin-bottom: 200px;
@@ -809,12 +944,20 @@
   padding-bottom: 5px;
   margin: 0 0 17px 0;
 }
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .about-us ul a h4:hover {
+  -webkit-text-decoration: 2px solid white underline;
+          text-decoration: 2px solid white underline;
+}
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .about-us ul li {
   margin: 17px 0 0 0;
 }
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .about-us ul li a {
   font-size: 13px;
   color: #fff;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .about-us ul li a:hover {
+  -webkit-text-decoration: 1px solid white underline;
+          text-decoration: 1px solid white underline;
 }
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .download-stores {
   margin-bottom: 135px;
@@ -827,6 +970,7 @@
   font-weight: 600;
   font-size: 16px;
   padding-bottom: 7px;
+  margin-top: 25px;
 }
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .download-stores ul li .mobile-apps {
   height: 100px;
@@ -851,12 +995,20 @@
   margin: 0 0 17px 0;
   font-weight: 400;
 }
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .campaigns a h4:hover {
+  -webkit-text-decoration: 2px solid white underline;
+          text-decoration: 2px solid white underline;
+}
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .campaigns ul li {
   margin: 20px 0 0 0;
 }
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .campaigns ul li a {
   font-size: 13px;
   color: #fff;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .campaigns ul li a:hover {
+  -webkit-text-decoration: 1px solid white underline;
+          text-decoration: 1px solid white underline;
 }
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .social-media-tags {
   margin-bottom: 140px;
@@ -868,6 +1020,7 @@
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .social-media-tags ul li .social-media {
   font-size: 16px;
   font-weight: 600;
+  margin-top: 20px;
 }
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .social-media-tags ul li .media-tags {
   height: 100px;
@@ -909,12 +1062,20 @@
   font-weight: 400;
   color: white;
 }
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .help a h4:hover {
+  -webkit-text-decoration: 2px solid white underline;
+          text-decoration: 2px solid white underline;
+}
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .help ul li {
   margin: 0 0 20px 0;
 }
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .help ul li a {
   font-size: 13px;
   color: white;
+}
+.footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .help ul li a:hover {
+  -webkit-text-decoration: 1px solid white underline;
+          text-decoration: 1px solid white underline;
 }
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .security-policy {
   margin-bottom: 130px;
@@ -924,6 +1085,7 @@
 }
 .footer-middle-bottom .footer-middle .footer-info .footer-sub-info1 .security-policy ul li .change-country {
   position: relative;
+  margin-top: 10px;
   bottom: 16px;
   width: 110px;
   height: 25px;
@@ -1004,6 +1166,14 @@
   will-change: scroll-position;
   backface-visibility: hidden;
 }
+.scroll-to-up .up-button:hover {
+  color: #f27a1a;
+  border: 1px solid orangered;
+  background-position: 0 -18px;
+  transition-duration: 0.4s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
 .scroll-to-up .up-button i {
   float: left;
   height: 20px;
@@ -1019,4 +1189,10 @@
   font-weight: 600;
   margin-left: 7px;
   text-align: center;
+}
+.scroll-to-up .up-button span:hover {
+  color: #f27a1a;
+  transition-duration: 0.4s;
+  transition-property: all;
+  transition-timing-function: linear;
 }/*# sourceMappingURL=style.css.map */
