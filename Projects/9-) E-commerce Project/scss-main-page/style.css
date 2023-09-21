@@ -25,13 +25,12 @@
   top: 10px;
   left: 15px;
   margin-bottom: 5px;
-}
-.header-container .ecommerce-title-top nav ul li {
   /* .activate{
-      #scrollLink{
-          background-color: lime;
-      }
-  } */
+          #scrollLink{
+              background-color: lime;
+          }
+      } 
+  }*/
 }
 .header-container .ecommerce-title-top nav ul li #scrollLink {
   display: flex;
@@ -45,9 +44,6 @@
   color: #f27a1a;
   -webkit-text-decoration: 1px solid orangered underline;
           text-decoration: 1px solid orangered underline;
-}
-.header-container .ecommerce-title-top nav ul li #scrollLink:active {
-  background-position: bottom;
 }
 .header-container .ecommerce-title-top .share-app {
   position: relative;
@@ -450,7 +446,6 @@
 }
 .middle1-slider-content .middle-slider-content {
   display: flex;
-  overflow: hidden;
   width: auto;
   margin-left: 20px;
   height: 350px;
