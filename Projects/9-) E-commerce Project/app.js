@@ -207,3 +207,67 @@ goUp.addEventListener("click", e => {
 
 }); */
 
+//Web Share
+
+const shareBtn = document.getElementById("share-app-button");
+const shareContent = document.getElementById("share-content");
+const error = document.getElementById("error");
+
+shareBtn.addEventListener("click", e =>{
+    e.preventDefault();
+    if(navigator.share){
+        const shareData = {
+            title : "Trendyol",
+            text : "Uygulamayı paylaştığınız için teşekkür ederiz",
+            url : "http://127.0.0.1:5500/Projects/9-)%20E-commerce%20Project/index.html"
+        }
+        
+        navigator.share(shareData)
+        .then( () => {
+            shareContent.style.display = "inline";
+        })
+        .catch( () =>{
+            error.style.display = "inline";
+        })
+    }
+});
+
+//Zooming
+
+const zoom = document.querySelector('input[type="range"]');
+
+zoom.addEventListener("input", e => {
+    document.documentElement.style.setProperty('--zoom', Number(e.target.value));
+})
+
+//scrollIntoView Applying Method
+/* 
+const lists = document.querySelectorAll("nav ul li");
+
+lists.forEach(list => {
+    list.addEventListener("click", e =>{
+        e.preventDefault();
+        [...lists].map(list => list.classList.remove("activate"));
+        list.classList.add("activate");
+
+        let target = list.querySelector("#scrollLink").getAttribute("href").replace("#", "");
+        document.getElementById(target).scrollIntoView({
+            behavior:  "smooth",
+            block: "center",
+            inline: "center"
+        });
+        let scrollTimeout;
+        addEventListener("scroll", () =>{
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(function(){
+                document.querySelector(".activate").scrollIntoView({
+                    behavior: "smooth",
+                    block: "nearest",
+                    inline: "center"
+                });
+            }, 1000);
+        })
+    });
+});
+
+ */

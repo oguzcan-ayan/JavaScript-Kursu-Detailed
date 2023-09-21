@@ -13,6 +13,44 @@
     <header style="height: 130px;">
     <div class="header-container">
         <div class="ecommerce-title-top">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#section1" id="scrollLink">Başlarken</a>
+                    </li>
+                    <li>
+                        <a href="#section2" id="scrollLink">İlginizi Çekebilir</a>
+                    </li>
+                    <li>
+                        <a href="#section3" id="scrollLink">Öne Çıkan Ürünler</a>
+                    </li>
+                    <li>
+                        <a href="#section4" id="scrollLink">Ürünlere Giriş</a>
+                    </li>
+                    <li>
+                        <a href="#section5" id="scrollLink">Çok Satan Ürünler</a>
+                    </li>
+                    <li>
+                        <a href="#section6" id="scrollLink">Mega Eylül Fırsatları</a>
+                    </li>
+                    <li>
+                        <a href="#section7" id="scrollLink">Ürün Kategorileri</a>
+                    </li>
+                    <li>
+                        <a href="#footer" id="scrollLink">Uygulama Hakkında</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="share-app">
+
+                <button class="share-app-button" id="share-app-button">Uygulamayı Paylaş</button>
+
+                <div class="share-content-container">
+                    <span class="share-content" id="share-content">Uygulamayı Paylaştınız</span>
+                    <span class="error" id="error">Bir hatayla karşılaştınız</span>
+                </div>
+            </div>
+
             <ul>
                 <li>
                     <a href="#">İndirim Kuponlarım</a>
@@ -28,8 +66,8 @@
                 </li>
             </ul>
         </div>
-        <div class="ecommerce-title" id="title-scroll" title="trendyol">
-        <div class="page-title">   
+        <div class="ecommerce-title" id="title-scroll">
+        <div class="page-title" title="trendyol">   
             <a href="#">
                 <img src="Images/trendyol title.png" alt="content not found">
             </a>
@@ -50,7 +88,7 @@
     </div>
     </header>
 <main>
-   <section>
+   <section id="section1">
     <nav class="nav-products">
         <div class="products">
             <ul>
@@ -92,7 +130,7 @@
         </div>
     </nav>
   </section>
-    <section style="width: 100%; overflow: hidden;">
+    <section style="width: 100%; overflow: hidden;" id="section2">
         <div class="start-slider-content" id="start-slider-content">
             <div class="slide">
                 <div class="inner-content">
@@ -260,7 +298,7 @@
 
     </section>
 
-    <section>
+    <section id="section3">
         <div class="different-products">
 
             <div class="add-basket"><a href="#">Sepete En Çok Eklenenler</a></div>
@@ -273,7 +311,7 @@
 
     </section>
      
-    <section>
+    <section id="section4">
 
         <div class="start-mega-september">
             <div>
@@ -317,7 +355,7 @@
 
     </section>
 
-    <section style="width: 100%; overflow: hidden;">
+    <section style="width: 100%; overflow: hidden;" id="section5">
 
         <div class="middle1-slider-content">
             <div class="content-header">
@@ -1271,7 +1309,7 @@
     </div>
     </section>
 
-<section>
+<section id="section6">
 
     <div class="middle-mega-september">
         <div>
@@ -1476,7 +1514,7 @@
     </div>
 </section>
 
-<section>
+<section id="section7">
 
     <div class="ecommerce-sub-content">
         <div class="sub-section1">
@@ -1665,7 +1703,7 @@
 
 </main>
 
-<footer>
+<footer id="footer">
         <div class="footer-top">
             <div class="popular-brand-category-container">
                 <div class="popular-brand-shops">
@@ -2101,6 +2139,10 @@
             <span>Yukarı Çık</span>
         </button>
         
+    </div>
+
+    <div class="zoom">
+        <input type="range" min="0.5" max="1.5" step="0.01" value="1">
     </div>
 
 </footer>

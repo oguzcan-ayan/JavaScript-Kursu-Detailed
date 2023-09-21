@@ -350,6 +350,66 @@
                             }
                         }
                     }
+
+                    .comment-form-add{
+
+                        .comment-title{
+                            font-size: 30px;
+                            color: crimson;
+                        }
+                        > div{
+                            margin-top: 30px;
+
+                            textarea{
+                                margin-top: 10px;
+                                width: 400px;
+                                height: 100px;
+                            }
+                            input{
+                                width: 320px;
+                                
+                            }
+                            label{
+                                color: #333;
+                            }
+                        }
+
+                        .add-comment-button{
+                            margin-top: 10px;
+                            cursor: pointer;
+                            width: 100%;
+                            height: 48px;
+                            border-radius: 8px;
+                            background: #f27a1a;
+                            letter-spacing: 0.5px;
+                            transition: all 0.3s step-start;
+                            border: none;
+                            color: white;
+                            font-size: 18px;
+                            &:hover{
+                                background: #b84f0a;
+                            }
+                        }
+
+                    }
+
+                    .delete-comment-button{
+                        margin-top: 20px;
+                        cursor: pointer;
+                        width: 100%;
+                        height: 48px;
+                        border-radius: 8px;
+                        background: rgb(218, 6, 6);
+                        color: white;
+                        letter-spacing: 0.5px;
+                        transition: all 0.3s step-start;
+                        border: none;
+                        font-size: 18px;
+                        &:hover{
+                            background: darkred;
+                        }
+                    }
+
                 }
                 .container-right-content{
                     display: flex;
@@ -475,10 +535,15 @@
                                                 align-items: center;
                                                 justify-content: center;
                                                 
-                                                img{
-                                                    width: 25px;
-                                                    height: 25px;
-                                                    font-size: 25px;
+                                                .star{
+                                                    color: gold;
+                                                    margin-right: 5px;
+                                                    margin-bottom: 1px;
+
+                                                    .star.highlight{
+                                                        color: red;
+                                                        cursor: pointer;
+                                                    }
                                                 }
                                             }
                                             .separator{
@@ -787,6 +852,20 @@
                         height: 10px;
                         border-top: 1px solid #e6e6e6;
                       }
+
+                      .show-comments{
+                        margin-top: 85px;
+                        margin-left: 70px;
+                        background: #eaffe3;
+                        border-radius: 5px;
+                        > div{
+                            font-size: 18px;
+                            border-bottom: 1px solid gray;
+                            text-indent: 8px;
+                            margin-top: 40px;
+                            letter-spacing: 0.6px;
+                        }
+                    }
                     }
 
                     .container-end-content{

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Bargello Parfüm</title>
     <link rel="stylesheet" href="scss-product-page/product.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -146,6 +146,27 @@
                                 </div>
                             </div>
                         </div>
+                        <form id="comment-form-add" class="comment-form-add">
+                            <div class="comment-title">
+                                Yorumlar : 
+                            </div>
+                            <div>
+                                <label for="name">Adınız : </label>
+                                <input type="text" id="name" required>
+                            </div>
+
+                            <div>
+                                <label for="comment">Ürün Hakkındaki Yorumunuz : </label>
+                                <textarea name="comment" id="comment" required></textarea>
+                            </div>
+
+                            <button class="add-comment-button" type="submit">Yorumu Ekle</button>
+                            
+                        </form>
+
+                        <button id="delete-comment-button" class="delete-comment-button">Tüm Yorumları Sil</button>
+
+
                     </div>
                     <div class="container-right-content">
                         <div class="container-middle-content">
@@ -171,11 +192,11 @@
                                             <div class="scoring">
                                                 <span>4.6</span>
                                                 <div class="stars">
-                                                    <img src="Images/sari-yildiz-sticker-42c5-6.jpg" alt="content not found">     
-                                                    <img src="Images/sari-yildiz-sticker-42c5-6.jpg" alt="content not found">     
-                                                    <img src="Images/sari-yildiz-sticker-42c5-6.jpg" alt="content not found">     
-                                                    <img src="Images/sari-yildiz-sticker-42c5-6.jpg" alt="content not found">     
-                                                    <img src="Images/sari-yildiz-sticker-42c5-6.jpg" alt="content not found">     
+                                                    <span class="star">&#9733;</span>
+                                                    <span class="star">&#9733;</span>
+                                                    <span class="star">&#9733;</span>
+                                                    <span class="star">&#9733;</span>
+                                                    <span class="star">&#9733;</span>    
                                                 </div>
                                                
                                             </div>
@@ -260,7 +281,13 @@
                                 
                             </div>
                             <div class="all-features-button-line"></div>
+
+                            <div class="show-comments" id="show-comments">
+
+                          
+                            </div>
                         </div>
+                        
                         <div class="container-end-content">
                             <div class="institutional-bill">
                                 <div>
@@ -377,5 +404,5 @@
 </div>
 
 <script src="app.js"></script>
-
+<script src="product.js"></script>
 </html>

@@ -1,0 +1,50 @@
+.browser {
+  width: 500px;
+  height: 350px;
+  border: 3px solid #ddd;
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 3px;
+  opacity: 1;
+}
+.browser .preview {
+  height: 310px;
+  background-size: cover;
+  transition: all 10s;
+}
+.browser .preview:hover {
+  background-position: bottom;
+}
+.browser .header {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  padding: 0 25px;
+  background-color: #eee;
+  border-bottom: 2px solid #ddd;
+}
+.browser .header span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(206, 17, 17);
+  position: relative;
+}
+.browser .header span::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(19, 155, 19);
+  position: absolute;
+  left: -14px;
+}
+.browser .header span::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(193, 204, 39);
+  position: absolute;
+  right: -14px;
+}/*# sourceMappingURL=preview.css.map */
