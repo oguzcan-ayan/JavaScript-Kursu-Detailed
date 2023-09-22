@@ -321,4 +321,4 @@ document.getElementById("basket")
   });
 
 
-writeLocalStorage();
+writeLocalStorage(); 
