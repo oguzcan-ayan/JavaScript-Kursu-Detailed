@@ -135,6 +135,50 @@
             align-items: center;
             justify-content: center;
 
+            #basketContent {
+                display: none;
+                position: absolute;
+                top: 18%;
+                right: 1%;
+                background-color: #f5f5f5;
+                box-shadow: 2px 2px 2px 2px gray;
+                width: 300px;
+                height: fit-content;
+                min-height: 250px;
+                padding: 10px;
+                z-index: 10000;
+                border-radius: 6px;
+                &.active {
+                  display: block;
+                }
+                h1{
+                    font-size: 17px;
+                    color: orangered;
+                    border-bottom: 1px solid gray;
+                }
+                span{
+                    font-size: 18px;
+                    font-weight: 700;
+                    position: relative;
+                    bottom: 7px;
+                    margin-left: 20px;
+                }
+                button{
+                    border: none;
+                    border-radius: 50%;
+                    color: orangered;
+                    cursor: pointer;
+                    margin-left: 30px;
+                    background: lightgray;
+                    font-size: 30px;
+                    width: 40px;
+                    height: 30px;
+                    text-align: center;
+                    margin-top: 125px;
+
+                }
+            }
+
             a{
                 
                 margin-left: 60px;
@@ -158,7 +202,18 @@
     }
     #title-scroll.active{
         position: fixed;
-        animation: all 5s ease-in-out;
+        border-bottom: 1px solid #ebebeb;
+        background: #fff;
+        animation: sticky-transition-show .3s forwards linear;
+        animation-name: sticky-transition-show;
+        @keyframes sticky-transition-show {
+            0%{
+                transform: translateY(-100%);
+            }
+            100%{
+                transform: translateY(0%);
+            }
+        }
     }  
 }
 .nav-products{
@@ -521,7 +576,6 @@
                                         .scoring{
                                             display: flex;
                                             align-items: center;
-                                            gap: 8px;
 
                                             span{
                                                 color: #333;
@@ -533,11 +587,12 @@
                                             .stars{
                                                 display: flex;
                                                 align-items: center;
-                                                justify-content: center;
-                                                
-                                                .star{
+                                                justify-content: start;
+                                                width: fit-content;
+                                                margin: 0 8px;
+                                                .star{  
                                                     color: gold;
-                                                    margin-right: 5px;
+                                                    cursor: pointer;
                                                     margin-bottom: 1px;
 
                                                     .star.highlight{
@@ -552,7 +607,7 @@
                                                 width: 3px;
                                                 background-color: #999;
                                                 border-radius: 50%;
-                                                margin-left: 8px;
+                                                margin-left: -2px;
                                                 margin-right: 8px;
                                             }
                                         }
@@ -570,13 +625,13 @@
 
                                         a{
                                             color: #666;
-                                            font-size: 12px;
+                                            font-size: 10px;
                                             &:hover{
                                                 color: orangered;
                                                 text-decoration: underline;
                                             }
                                             span{
-                                                font-size: 12px;
+                                                font-size: 10px;
                                                 color: #333;    
                                                 font-weight: 600;
                                                 &:hover{
@@ -594,14 +649,14 @@
                                           }
 
                                           .separator{
-                                            margin-top: 4px;
+                                            margin-top: 2px;
                                             height: 3px;
                                             width: 3px;
                                             background-color: #999;
                                             border-radius: 50%;
-                                            margin-left: 8px;
+                                            margin-left: 1px;
                                             margin-right: 8px;
-                                            }
+                                        }
 
                                         }
                                     }
@@ -617,13 +672,13 @@
                                             cursor: pointer;
                                             a{
                                                 color: #666;
-                                                font-size: 12px;
+                                                font-size: 10px;
                                                 &:hover{
                                                     text-decoration: underline;
                                                     color: orangered;
                                                 }
                                                 span{
-                                                    font-size: 12px;
+                                                    font-size: 10px;
                                                     color: #333;    
                                                     font-weight: 600;
                                                     &:hover{
@@ -631,6 +686,16 @@
                                                         text-decoration: underline;
                                                     }
                                                 }
+                                            }
+
+                                            .separator{
+                                                margin-top: 2px;
+                                                height: 3px;
+                                                width: 3px;
+                                                background-color: #999;
+                                                border-radius: 50%;
+                                                margin-left: -2px;
+                                                margin-right: 8px;
                                             }
                                         }
                                     }
@@ -640,25 +705,25 @@
                                         position: relative;
                                         .favourite{
                                             position: relative;
-                                            left: 10px;
+                                            left: 14px;
                                             display: flex;
                                             align-items: center;
                                             gap: 4px;
                                             cursor: pointer;
                                             color: #666;
-                                            font-size: 12px;
+                                            font-size: 10px;
                                             i{
                                                 position: relative;
-                                                left: 10px;
+                                                left: 6px;
                                                 width: 14px;
                                                 height: 12px;
                                                 font-size: 12px;
                                             }
                                             span{
                                                 position: relative;
-                                                left: 10px;
+                                                left: 2px;
                                                 color: #333;
-                                                font-size: 12px;
+                                                font-size: 10px;
                                             }
                                         }   
                                     }
@@ -1421,6 +1486,16 @@
             right: 20px;
             will-change: scroll-position;
             backface-visibility: hidden;
+
+            &:hover{
+                color: #f27a1a;
+                border: 1px solid orangered;
+                background-position: 0 -18px;
+                transition-duration: .4s;
+                transition-property: all;
+                transition-timing-function: ease-in-out;
+            }    
+
             i{
                 float: left;
                 height: 20px;
@@ -1438,7 +1513,26 @@
                 margin-left: 7px;
                 text-align: center;
             
+                &:hover{
+                    color: #f27a1a;
+                    transition-duration: 0.4s;
+                    transition-property: all;
+                    transition-timing-function: linear;
+                }
             }
         }
     }
     
+    :root{
+        --zoom: 1;
+    }
+
+    body *:not(.zoom):not(.zoom *){
+        zoom: var(--zoom);
+    }
+
+    .zoom{
+        position: fixed;
+        bottom: 15px;
+        left: 30px;
+    }
