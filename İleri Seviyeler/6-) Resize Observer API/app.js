@@ -87,7 +87,7 @@ const genres = [
     },
 ]
 
-
+/* 
 const observer = new ResizeObserver(([entry]) => {
     const visibles = Math.floor(entry.contentRect.width / 130);
     let html = '';
@@ -110,6 +110,38 @@ const observer = new ResizeObserver(([entry]) => {
             html += `</div>`
         }
     document.querySelector('.menu').innerHTML = html;    
+}) */
+
+const observer = new ResizeObserver(entries => {
+    for(let entry of entries){
+    const visibles = Math.floor(entry.contentRect.width / 130);
+    let html = '';
+    if(visibles){
+        html += genres.slice(0, visibles - 1).reduce((prev, current) => {  
+            return prev += `<a href="#">${current.title}</a>`
+        
+        }, '')
+    }
+    const invisibles = genres.slice(visibles > 0 ? visibles - 1 : 0);
+        if(invisibles.length > 0){
+            html += `<div class="dropdown">`
+            html += `<button>Genres</button>`
+            html += `<nav>`
+            html += invisibles.reduce((prev, current) => {  
+                return prev += `<a href="#">${current.title}</a>`
+            
+            }, '')
+            html += `</nav>`
+            html += `</div>`
+        }
+   /*  document.querySelector('.menu').innerHTML = html;   */
+    entry.target.innerHTML = html; 
+    }
 })
 
-observer.observe(document.querySelector('.menu'));
+
+// observer.observe(document.querySelector('.menu'));
+
+document.querySelectorAll('.menu').forEach(menu => observer.observe(menu));
+
+
