@@ -15,19 +15,47 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#image {
-    width: 400px;
-    height: 400px;
+.image {
+    width: 200px;
+    height: 200px;
     background: blue;
     margin-bottom: 20px;
+    margin-right: 25px;
+    transition: transform 500ms;
+    transform: translateX(calc(-100% - 25px));
 }
 
+#box{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.text{
+    font-size: 40px;
+    transform: scale(.5);
+    opacity: 0;
+    transition: 500ms all;
+}
+
+#box.active .text{
+    opacity: 1;
+    transform: scale(1);
+}
+
+#box.active .image{
+    transform: translateX(0);
+}
+/* 
 #container{
     height: 300px;
     overflow: auto;
     border: 1px solid #ddd;
 }
-
+ */
 
 
 
