@@ -3,11 +3,11 @@ let value;
 const programmer = {
     name : "Oğuzcan",
     age : 23,
-    email : "oguzcanayan43@gmail.com",
+    email : "something@hotmail.com",
     langs : ["Python", "Java", "Javascript", "C#", "Html", "Css"],
     address : {
-        city : "Corum",
-        village : "Sungurlu"
+        city : "Artvin",
+        village : "Arhavi"
     },
     work : function(){
         console.log("The programmer is running...");

@@ -20,7 +20,7 @@ module.exports.test2 = function test2(){
     },
     person : {
         name : "Beyza Betül",
-        mail : "beyza_123@hotmail.com" 
+        mail : "something@hotmail.com" 
     } 
 }; */
 
